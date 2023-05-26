@@ -1,4 +1,6 @@
 <script setup>
+import ClientsUse from "@/components/ClientsUse.vue";
+import Email from "@/components/Email.vue";
 import Features from "@/components/Features.vue";
 import HowWork from "@/components/HowWork.vue";
 import Wrapper from "@/components/Wrapper.vue";
@@ -8,6 +10,8 @@ import Wrapper from "@/components/Wrapper.vue";
     <Wrapper />
     <Features />
     <HowWork />
+    <ClientsUse />
+    <Email />
   </div>
 </template>
 

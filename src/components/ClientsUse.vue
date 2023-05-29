@@ -12,7 +12,7 @@ const blockScroll = () => {
     <div class="container">
       <article
         id="video"
-        class="flex justify-between pb-20 phone:flex-col-reverse phone:px-3 md:flex-row"
+        class="flex justify-between pb-20 phone:flex-col-reverse phone:px-3 md:flex-row xl:items-center"
       >
         <div class="pt-28 phone:pt-12 md:w-[800px]">
           <h2 class="font-bold mb-7 dark:text-white text-indigo-500">
@@ -38,7 +38,7 @@ const blockScroll = () => {
           href="#video"
         >
           <i
-            class="fa-solid fa-play group-hover:text-white md:top-44 md:right-44 group-hover:bg-[rgb(99,102,241)] text-gray-600 text-lg bg-white dark:bg-[rgb(41,43,62,0.2)] dark:group-hover:bg-[rgb(99,102,241)] dark:group-hover:text-white rounded-full pl-8 pr-7 py-6 absolute dark:text-indigo-300 top-1/2 right-[320px]"
+            class="fa-solid fa-play group-hover:text-white group-hover:bg-[rgb(99,102,241)] text-gray-600 text-lg bg-white dark:bg-[rgb(41,43,62,0.2)] dark:group-hover:bg-[rgb(99,102,241)] dark:group-hover:text-white rounded-full pl-8 pr-7 py-6 absolute dark:text-indigo-300 phone:top-32 phone:left-28 phone2:top-40 phone2:left-40 poco:left-48 poco:top-44 poco2:left-[240px] poco2:top-52 sm:left-[275px] sm:top-60 sm2:top-64 sm2:left-[320px] md:top-40 md:left-48 md2:top-44 md2:left-56 semimd:top-48 semimd:left-64 lg:left-[275px] lg:top-52 xl:left-[300px] xl:top-52 semibig:top-56 semibig:left-80 big:top-64 big:left-96 big3:left-[390px] 1xl:left-[430px] 1xl:top-72 2xl:left-[440px]"
           ></i>
           <img
             width="746"

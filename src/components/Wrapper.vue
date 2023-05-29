@@ -51,15 +51,15 @@
             </div>
           </a>
         </div>
-        <button
-          class="md:mt-20 semimd:mt-auto self-start phone:mt-5 poco:mt-12"
-        >
-          <span
-            class="bg-slate-500 text-white font-extralight text-2xl rounded-full px-[13px] mr-2 py-2 dark:text-inherit dark:bg-white"
-            >🡣</span
-          >
-          <a href="#more">Discover more</a>
-        </button>
+        <p class="md:mt-20 semimd:mt-auto self-start phone:mt-10 poco:mt-12">
+          <a href="#more">
+            <span
+              class="bg-slate-500 text-white font-extralight text-2xl rounded-full px-[13px] mr-2 py-2 dark:text-inherit dark:bg-white"
+              >🡣</span
+            >
+            Discover more
+          </a>
+        </p>
       </article>
       <div
         class="h-full w-5/12 phone:w-full md:h-full phone:h-96 sm:mt-12 sm:h-[600px] md:mt-0"

@@ -55,8 +55,8 @@
           <a href="#more">
             <span
               class="bg-slate-500 text-white font-extralight text-2xl rounded-full px-[13px] mr-2 py-2 dark:text-inherit dark:bg-white"
-              >🡣</span
-            >
+              ><i class="fa-solid fa-angle-down"></i
+            ></span>
             Discover more
           </a>
         </p>

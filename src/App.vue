@@ -83,7 +83,7 @@ const blockScroll = () => {
         :class="
           isShown
             ? 'fixed top-0 translate-x-0 overflow-hidden z-30 h-screen w-screen bg-black bg-opacity-60'
-            : 'fixed top-0 h-screen w-screen translate-x-[1000px]'
+            : 'fixed top-0 h-screen w-screen translate-x-[10000px]'
         "
       >
         <div

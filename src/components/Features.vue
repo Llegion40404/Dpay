@@ -6,9 +6,10 @@ const logos = resource.logos;
 const feature = resource.features;
 </script>
 <template>
-  <section id="more" class="container py-24 poco:px-2 phone:pb-0">
+  <section id="more" class="container py-20 poco:px-2 phone:pb-0 semimd:pb-28">
     <div class="px-2 flex justify-center">
       <swiper-container
+        class="py-5"
         :space-between="15"
         :breakpoints="{
           640: { slidesPerView: 4, loop: false },
@@ -19,7 +20,7 @@ const feature = resource.features;
         :loop="true"
       >
         <swiper-slide
-          class="border px-3 py-8 rounded-lg border-gray-200 border-opacity-30"
+          class="border px-3 py-8 rounded-lg border-gray-200 border-opacity-30 hover:bg-white hover:bg-opacity-10 hover:-translate-y-3 transition duration-300"
           v-for="logo in logos"
           ><img :src="logo" alt="logo"
         /></swiper-slide>
@@ -49,7 +50,7 @@ const feature = resource.features;
         >
           <div
             v-for="f in feature"
-            class="w-5/12 semibig:w-[45%] phone:w-full poco2:w-1/2 phone:text-left mb-12 px-3 flex items-start gap-6 justify-between"
+            class="w-5/12 semibig:w-[45%] phone:w-full poco2:w-1/2 phone:text-left mb-12 phone:px-3 semimd:px-0 flex items-start gap-6 justify-between"
           >
             <img
               class="dark:bg-[rgb(31,28,45)] bg-slate-100 p-4 box-border rounded-lg"

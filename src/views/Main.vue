@@ -9,8 +9,8 @@ import Wrapper from "@/components/Wrapper.vue";
   <div>
     <Wrapper />
     <Features />
-    <!-- <HowWork />
-    <ClientsUse />
+    <HowWork />
+    <!-- <ClientsUse />
     <Email /> -->
   </div>
 </template>

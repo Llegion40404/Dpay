@@ -23,11 +23,11 @@ const blockScroll = () => {
 <template>
   <section class="wraper">
     <nav
-      class="absolute flex justify-between py-4 phone:py-3 shadow-md bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
+      class="absolute flex justify-between py-4 phone:py-3 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
       :class="isShown ? 'overflow-visible' : 'overflow-hidden'"
     >
       <div
-        class="container flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
+        class="container semimd:px-0 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
       >
         <div class="flex items-center gap-9">
           <RouterLink
@@ -36,7 +36,7 @@ const blockScroll = () => {
             >dpay</RouterLink
           >
           <RouterLink
-            class="font-semibold opacity-90 text-base phone:hidden"
+            class="font-semibold opacity-90 text-base phone:hidden semimd:block"
             to="/"
             >Mobile App Showcase</RouterLink
           >
@@ -61,7 +61,6 @@ const blockScroll = () => {
               <input
                 type="checkbox"
                 :checked="theme ? true : false"
-                value=""
                 class="sr-only peer"
               />
               <div
@@ -76,7 +75,7 @@ const blockScroll = () => {
           </div>
           <i
             @click="(isShown = !isShown), blockScroll()"
-            class="fa-solid fa-bars text-2xl lg:hidden"
+            class="fa-solid fa-bars text-2xl semimd:hidden"
           ></i>
         </div>
       </div>

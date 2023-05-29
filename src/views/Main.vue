@@ -11,7 +11,7 @@ import Wrapper from "@/components/Wrapper.vue";
     <Features />
     <HowWork />
     <ClientsUse />
-    <!-- <Email /> -->
+    <Email />
   </div>
 </template>
 

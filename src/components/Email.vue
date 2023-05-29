@@ -14,94 +14,109 @@ const showText = (idx) => {
 <template>
   <section class="dark:text-white pb-12">
     <div class="container flex flex-col">
-      <section class="flex justify-between">
-        <article class="font-bold pt-40">
-          <h3 class="text-indigo-500 dark:text-white">
-            Any questions? <br />Check out the FAQs
+      <section
+        class="flex phone:w-full justify-between phone:flex-col md:flex-row"
+      >
+        <article
+          class="font-bold pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
+        >
+          <h3 class="text-indigo-500 dark:text-white phone:text-lg md:pr-40">
+            Any questions? Check out the FAQs
           </h3>
           <p
-            class="text-xl text-gray-500 dark:text-indigo-400 my-7 dark:opacity-60"
+            class="text-xl text-slate-500 dark:text-indigo-400 my-7 dark:opacity-60 poco2:px-4 poco2:text-center md:text-left md:px-0"
           >
             Still have unanswered questions and need to get in touch?
           </p>
           <button
-            class="px-5 py-3 bg-indigo-500 font-semibold text-white rounded-md"
+            class="px-5 py-3 bg-indigo-500 font-semibold text-white rounded-md md:mr-40"
           >
             Contact us now
           </button>
         </article>
-        <article class="w-8/12 pl-20">
-          <ul class="flex flex-col p-5">
-            <li
-              @click="showText(idx)"
-              v-for="(it, idx) in resource.divisions"
-              class="division group flex flex-col border-b border-x first:border-t first:rounded-t-lg last:rounded-b-lg dark:border-gray-600 justify-center cursor-pointer text-lg font-semibold relative"
-            >
-              <div
+        <article class="my-10 phone:mx-2 md:w-11/12">
+          <div
+            @click="showText(idx)"
+            :class="
+              activeIdx == idx
+                ? 'border border-white border-opacity-30 border-t-0 first:border-t first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
+                : 'border border-white border-opacity-30 first:border-t border-t-0 first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
+            "
+            v-for="(it, idx) in resource.divisions"
+          >
+            <div class="py-4 px-3 w-9/12 h-auto phone2:py-5 font-semibold">
+              {{ it.text }}
+              <span
                 :class="
                   activeIdx == idx
-                    ? 'overflow-hidden h-80 py-6'
-                    : 'overflow-hidden h-20 py-6'
+                    ? 'rotate-180 bg-indigo-500 text-white pr-3 pl-[14px] w-10 h-10 text-xs py-3 rounded-full absolute right-3 phone:top-[20px] duration-500 phone2:top-3'
+                    : 'dark:bg-[rgb(31,28,45)] dark:text-white text-neutral-700 bg-blue-200 bg-opacity-10 px-4 w-10 h-10 text-xs py-3 rounded-full absolute right-3 phone:top-5 duration-500 phone2:top-3'
                 "
               >
-                <p class="pl-5">{{ it.text }}</p>
-                <span
-                  :class="
-                    activeIdx == idx
-                      ? 'rotate-180 bg-indigo-500 text-white  pr-3 pl-[14px] w-10 h-10 text-xs py-3 rounded-full absolute top-4 right-3'
-                      : 'dark:bg-[rgb(31,28,45)]  dark:text-white text-neutral-700 bg-blue-200 bg-opacity-10 px-4 w-10 h-10 text-xs py-3 rounded-full absolute top-4 right-3'
-                  "
-                >
-                  ▼
-                </span>
-                <div class="my-7 px-5 pt-5 border-t dark:border-gray-600">
-                  <p
-                    class="text-base dark:text-indigo-200 opacity-70 font-normal"
-                  >
-                    Nunc duis id aenean gravida tincidunt eu, tempor
-                    ullamcorper. Viverra aliquam arcu, viverra et, cursus.
-                    Aliquet pretium cursus adipiscing gravida et consequat
-                    lobortis arcu velit. Nibh pharetra fermentum duis accumsan
-                    lectus non. Massa cursus molestie lorem scelerisque
-                    pellentesque. Nisi, enim, arcu purus gravida adipiscing
-                    euismod montes, duis egestas. Vehicula eu etiam quam
-                    tristique tincidunt suspendisse ut consequat. <br /><br />
-                    Ornare senectus fusce dignissim ut. Integer consequat in eu
-                    tortor, faucibus et lacinia posuere. Turpis sit viverra
-                    lorem suspendisse lacus aliquam auctor vulputate. Quis
-                    egestas aliquam nunc purus lacus, elit leo elit facilisi.
-                    Dignissim amet adipiscing massa integer.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+                ▼
+              </span>
+            </div>
+            <div
+              :class="
+                activeIdx == idx
+                  ? 'max-h-[500px] border-t border-white border-opacity-30 my-1 p-3 duration-700'
+                  : 'max-h-0 duration-700 px-3'
+              "
+            >
+              <span
+                :class="
+                  activeIdx == idx
+                    ? 'opacity-50 duration-500 text-indigo-300 text-sm'
+                    : 'opacity-50 duration-500 text-sm'
+                "
+              >
+                Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.
+                Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus
+                adipiscing gravida et consequat lobortis arcu velit. Nibh
+                pharetra fermentum duis accumsan lectus non. Massa cursus
+                molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus
+                gravida adipiscing euismod montes, duis egestas. Vehicula eu
+                etiam quam tristique tincidunt suspendisse ut consequat. Ornare
+                senectus fusce dignissim ut. Integer consequat in eu tortor,
+                faucibus et lacinia posuere. Turpis sit viverra lorem
+                suspendisse lacus aliquam auctor vulputate. Quis egestas aliquam
+                nunc purus lacus, elit leo elit facilisi. Dignissim amet
+                adipiscing massa integer.
+              </span>
+            </div>
+          </div>
         </article>
       </section>
 
       <section
-        class="mt-20 email bg-[rgb(243,246,255)] dark:bg-indigo-200 p-20 rounded-lg dark:bg-opacity-10"
+        class="mt-20 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
       >
-        <div class="flex items-center justify-around">
-          <div class="flex w-5/12">
-            <i class="fa-solid fa-bell fa-5x text-yellow-400 mr-10"></i>
-            <h4 class="font-bold text-indigo-500 dark:text-white text-lg mt-2">
+        <div
+          class="flex items-center justify-around phone:flex-col md:flex-row phone:items-start phone:pt-8"
+        >
+          <div class="flex w-5/12 phone:w-full phone:mb-5">
+            <i
+              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-5 phone:mt-6"
+            ></i>
+            <h4
+              class="font-bold text-indigo-500 dark:text-white text-lg mt-2 phone:text-base phone2:mt-8 sm:px-4 xl:pr-20"
+            >
               Subscribe to our newsletter to stay informed about latest updates
             </h4>
           </div>
-          <form>
+          <form class="phone:pb-5">
             <label for="email" class="relative">
               <input
                 type="email"
                 id="email"
                 placeholder="Your Email"
-                class="rounded-lg text-lg dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 text-gray-700 dark:focus:bg-gray-200"
+                class="rounded-lg text-lg phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-7 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
               />
               <i
-                class="fa-solid absolute top-[2px] text-gray-700 dark:text-white left-5 fa-envelope"
+                class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-2 poco2:left-5 fa-envelope"
               ></i>
               <button
-                class="py-[13px] font-medium text-lg px-7 text-white bg-indigo-500 rounded-r-lg absolute -right-1"
+                class="py-[13px] phone2:py-[15px] font-medium text-lg px-7 text-white bg-indigo-500 rounded-r-lg absolute -right-1 phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"
                 type="submit"
               >
                 Subscribe
@@ -118,10 +133,3 @@ const showText = (idx) => {
     </footer>
   </section>
 </template>
-<style scoped>
-.division,
-.email *,
-.division * {
-  transition: ease 0.5s all;
-}
-</style>

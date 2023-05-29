@@ -32,6 +32,15 @@ let carousel = ref(null);
           mouseDrag: true,
           touchDrag: true,
         },
+        1030: {
+          itemsToShow: 4,
+        },
+        1330: {
+          itemsToShow: 5,
+        },
+        1630: {
+          itemsToShow: 6,
+        },
       }"
     >
       <Slide
@@ -56,7 +65,7 @@ let carousel = ref(null);
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo soluta voluptas enim delectus in nisi eligendi
             </span>
-            <div class="flex gap-1 pt-10 phone2:pt-4">
+            <div class="flex gap-1 pt-10 phone2:pt-4 phone:pt-4">
               <i v-for="star in 5" class="fa-solid fa-star text-yellow-400"></i>
             </div>
           </main>

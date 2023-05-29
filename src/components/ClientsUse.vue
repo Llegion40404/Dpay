@@ -27,7 +27,7 @@ const blockScroll = () => {
             </p>
           </div>
           <button
-            class="mt-16 bg-indigo-500 phone:w-full md:w-9/12s phone:mt-3 rounded-lg font-bold px-5 py-4"
+            class="mt-16 bg-indigo-500 phone:w-full md:w-9/12 xl:w-1/2 phone:mt-3 rounded-lg font-bold px-5 py-4"
           >
             Learn more <i class="fa-solid fa-arrow-right"></i>
           </button>

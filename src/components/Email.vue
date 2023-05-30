@@ -117,7 +117,7 @@ const showText = (idx) => {
                 class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-2 poco2:left-5 fa-envelope"
               ></i>
               <button
-                class="py-[13px] phone2:py-[15px] font-medium text-lg px-7 text-white bg-indigo-500 rounded-r-lg absolute -right-1 phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"
+                class="py-[13px] phone2:py-[15px] font-medium text-lg md2:px-7 phone:px-4 text-white bg-indigo-500 rounded-r-lg absolute -right-1 phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"
                 type="submit"
               >
                 Subscribe

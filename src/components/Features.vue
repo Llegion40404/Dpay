@@ -73,7 +73,9 @@ const feature = resource.features;
         </div>
       </article>
     </article>
-    <div class="group fixed top-[85vh] z-50 right-20">
+    <div
+      class="group fixed xl:top-[85vh] z-50 xl:right-20 phone:right-5 phone:top-[90vh]"
+    >
       <a
         href="#top"
         class="fa-solid fa-angle-up rounded-full bg-gray-700 text-white px-[20px] py-5"

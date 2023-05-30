@@ -39,7 +39,7 @@ const feature = resource.features;
           App Features
         </h4>
         <p
-          class="opacity-80 text-slate-200 dark:opacity-80 font-bold dark:font-semibold text-lg mb-10"
+          class="opacity-80 text-slate-400 dark:opacity-80 font-bold dark:font-semibold text-lg mb-10"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
           volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque

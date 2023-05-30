@@ -92,8 +92,8 @@ const showText = (idx) => {
       <section
         class="mt-20 flex justify-center phone:mt-3 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
       >
-        <div class="flex phone:flex-col md:flex-row phone:pt-5">
-          <div class="flex phone:w-full phone:mb-5">
+        <div class="flex phone:flex-col md:flex-row md:px-5 phone:pt-5">
+          <div class="flex phone:w-full md:w-1/2 phone:mb-5">
             <i
               class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-4 phone:mt-4"
             ></i>
@@ -103,7 +103,7 @@ const showText = (idx) => {
               Subscribe to our newsletter to stay informed about latest updates
             </h4>
           </div>
-          <form class="phone:pb-5 max-w-[100%]">
+          <form class="phone:pb-5 max-w-[100%] md:w-1/2">
             <label for="email" class="relative">
               <input
                 type="email"

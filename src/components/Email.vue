@@ -111,7 +111,7 @@ const showText = (idx) => {
                 type="email"
                 id="email"
                 placeholder="Your Email"
-                class="rounded-lg text-lg phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-7 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
+                class="rounded-lg text-lg phone:max-w-[260px] phone2:min-w-min phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-7 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
               />
               <i
                 class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-2 poco2:left-5 fa-envelope"

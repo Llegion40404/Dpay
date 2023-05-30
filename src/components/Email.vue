@@ -97,7 +97,7 @@ const showText = (idx) => {
         >
           <div class="flex phone:w-full phone:mb-5">
             <i
-              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-5 phone:mt-4"
+              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-4 phone:ml-2 phone:mt-4"
             ></i>
             <h4
               class="font-bold text-indigo-500 dark:text-white mt-2 phone:text-base phone2:mt-8 sm:px-4 xl:pr-20"

@@ -90,17 +90,17 @@ const showText = (idx) => {
       </section>
 
       <section
-        class="mt-20 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
+        class="mt-20 phone:mt-3 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
       >
         <div
           class="flex items-center justify-around phone:flex-col md:flex-row phone:items-start phone:pt-8"
         >
-          <div class="flex w-5/12 phone:w-full phone:mb-5">
+          <div class="flex phone:w-full phone:mb-5">
             <i
-              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-5 phone:mt-6"
+              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-5 phone:mt-4"
             ></i>
             <h4
-              class="font-bold text-indigo-500 dark:text-white text-lg mt-2 phone:text-base phone2:mt-8 sm:px-4 xl:pr-20"
+              class="font-bold text-indigo-500 dark:text-white mt-2 phone:text-base phone2:mt-8 sm:px-4 xl:pr-20"
             >
               Subscribe to our newsletter to stay informed about latest updates
             </h4>
@@ -111,10 +111,10 @@ const showText = (idx) => {
                 type="email"
                 id="email"
                 placeholder="Your Email"
-                class="rounded-lg text-lg phone:max-w-[260px] phone2:min-w-min phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-7 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
+                class="rounded-lg text-lg border phone:max-w-[260px] phone2:min-w-min phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-9 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
               />
               <i
-                class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-2 poco2:left-5 fa-envelope"
+                class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-3 phone:top-1 poco2:left-5 fa-envelope"
               ></i>
               <button
                 class="py-[13px] phone2:py-[15px] font-medium text-lg md2:px-7 phone:px-4 text-white bg-indigo-500 rounded-r-lg absolute -right-1 phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"

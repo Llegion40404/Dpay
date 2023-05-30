@@ -78,7 +78,7 @@ const feature = resource.features;
     >
       <a
         href="#top"
-        class="fa-solid fa-angle-up rounded-full bg-gray-700 text-white px-[20px] py-5"
+        class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-70 text-white px-[20px] py-5"
         ><span
           class="absolute top-5 right-16 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-300"
           >Top</span

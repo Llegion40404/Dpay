@@ -90,14 +90,12 @@ const showText = (idx) => {
       </section>
 
       <section
-        class="mt-20 phone:mt-3 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
+        class="mt-20 flex justify-center phone:mt-3 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
       >
-        <div
-          class="flex phone:flex-col md:flex-row phone:items-center phone:pt-4"
-        >
+        <div class="flex bg-red-400 phone:flex-col md:flex-row phone:pt-4">
           <div class="flex phone:w-full phone:mb-5">
             <i
-              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-4 phone:ml-2 phone:mt-4"
+              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-4 phone:mt-4"
             ></i>
             <h4
               class="font-bold text-indigo-500 dark:text-white mt-2 phone:text-base phone2:mt-8 sm:px-4 xl:pr-20"
@@ -111,7 +109,7 @@ const showText = (idx) => {
                 type="email"
                 id="email"
                 placeholder="Your Email"
-                class="rounded-lg text-lg border phone:max-w-[270px] phone2:min-w-min phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-9 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
+                class="rounded-lg text-lg border phone:max-w-full phone2:min-w-full phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pr-52 pl-12 py-3 phone:pr-10 phone:pl-9 phone:py-2 phone2:py-3 md:pr-24 md:mt-8 phone2:pr-28 poco:pr-44 lg:pr-56 poco2:pr-56 poco2:pl-12 sm:pr-72 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
               />
               <i
                 class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-3 phone:top-1 poco2:left-5 fa-envelope"

@@ -23,6 +23,7 @@ const blockScroll = () => {
 <template>
   <section class="wraper">
     <nav
+      id="top"
       class="absolute flex justify-between py-4 sm:px-3 phone:py-3 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
       :class="isShown ? 'overflow-visible' : 'overflow-hidden'"
     >

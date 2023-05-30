@@ -73,5 +73,15 @@ const feature = resource.features;
         </div>
       </article>
     </article>
+    <div class="group fixed top-[85vh] right-20">
+      <a
+        href="#top"
+        class="fa-solid fa-angle-up rounded-full bg-gray-700 text-white px-[20px] py-5"
+        ><span
+          class="absolute top-5 right-16 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-300"
+          >Top</span
+        ></a
+      >
+    </div>
   </section>
 </template>

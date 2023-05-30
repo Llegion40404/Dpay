@@ -39,8 +39,8 @@ const showText = (idx) => {
             @click="showText(idx)"
             :class="
               activeIdx == idx
-                ? 'border border-white border-opacity-30 border-t-0 first:border-t first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
-                : 'border border-white border-opacity-30 first:border-t border-t-0 first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
+                ? 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 border-t-0 first:border-t first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
+                : 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 first:border-t border-t-0 first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
             "
             v-for="(it, idx) in resource.divisions"
           >
@@ -59,15 +59,15 @@ const showText = (idx) => {
             <div
               :class="
                 activeIdx == idx
-                  ? 'max-h-[500px] border-t border-white border-opacity-30 my-1 p-3 duration-700'
-                  : 'max-h-0 duration-700 px-3'
+                  ? 'max-h-[500px] border-t dark:border-white dark:border-opacity-30 my-1 py-4 px-3 duration-700 md:pr-10'
+                  : 'max-h-0 duration-700 px-3 md:pr-10'
               "
             >
               <span
                 :class="
                   activeIdx == idx
-                    ? 'opacity-50 duration-500 text-indigo-300 text-sm'
-                    : 'opacity-50 duration-500 text-sm'
+                    ? 'dark:opacity-50 opacity-80 duration-500 text-gray-900 dark:text-indigo-300 text-sm md:text-base'
+                    : 'opacity-50 duration-500 text-sm md:text-base'
                 "
               >
                 Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.
@@ -76,6 +76,7 @@ const showText = (idx) => {
                 pharetra fermentum duis accumsan lectus non. Massa cursus
                 molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus
                 gravida adipiscing euismod montes, duis egestas. Vehicula eu
+                <br /><br />
                 etiam quam tristique tincidunt suspendisse ut consequat. Ornare
                 senectus fusce dignissim ut. Integer consequat in eu tortor,
                 faucibus et lacinia posuere. Turpis sit viverra lorem
@@ -133,3 +134,4 @@ const showText = (idx) => {
     </footer>
   </section>
 </template>
+<style scoped></style>

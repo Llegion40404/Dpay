@@ -93,7 +93,7 @@ const showText = (idx) => {
         class="mt-20 phone:mt-3 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
       >
         <div
-          class="flex phone:flex-col md:flex-row phone:items-center phone:pt-8"
+          class="flex phone:flex-col md:flex-row phone:items-center phone:pt-4"
         >
           <div class="flex phone:w-full phone:mb-5">
             <i
@@ -117,7 +117,7 @@ const showText = (idx) => {
                 class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-3 phone:top-1 poco2:left-5 fa-envelope"
               ></i>
               <button
-                class="py-[13px] phone2:py-[15px] font-medium text-lg md2:px-7 phone:px-4 text-white bg-indigo-500 rounded-r-lg absolute -right-1 phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"
+                class="py-[13px] phone2:py-[15px] font-medium text-lg md2:px-7 phone:px-4 text-white bg-indigo-500 rounded-r-lg absolute right-[0px] phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"
                 type="submit"
               >
                 Subscribe

@@ -36,14 +36,14 @@ const feature = resource.features;
         <h4
           class="font-bold phone:text-lg mb-8 dark:text-white text-indigo-500"
         >
-          App Features
+          Описание и возможности системы
         </h4>
         <p
           class="opacity-80 text-slate-400 dark:opacity-80 font-bold dark:font-semibold text-lg mb-10"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque
-          volutpat ligula est. Mattis fermentum, at nec lacus.
+          Dpay - это платежная система и мобильный банкинг в Узбекистане,
+          быстрая оплата через мобильное приложение с использованием пластиковой
+          карты UZCARD и HUMO.
         </p>
         <div
           class="phone:flex-col flex poco2:flex-row flex-wrap justify-between"

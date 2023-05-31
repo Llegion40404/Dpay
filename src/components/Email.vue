@@ -21,7 +21,7 @@ const showText = (idx) => {
           class="font-bold pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
         >
           <h3 class="text-indigo-500 dark:text-white phone:text-lg md:pr-40">
-            Any questions? Check out the FAQs
+            Популярные вопросы
           </h3>
           <p
             class="text-xl text-slate-500 dark:text-indigo-400 my-7 dark:opacity-60 poco2:px-4 poco2:text-center md:text-left md:px-0"
@@ -39,18 +39,18 @@ const showText = (idx) => {
             @click="showText(idx)"
             :class="
               activeIdx == idx
-                ? 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 border-t-0 first:border-t first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
-                : 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 first:border-t border-t-0 first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
+                ? 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 border-t-0 first:border-t cursor-pointer first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
+                : 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 first:border-t border-t-0 cursor-pointer first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
             "
             v-for="(it, idx) in resource.divisions"
           >
             <div class="py-4 px-3 w-9/12 h-auto phone2:py-5 font-semibold">
-              {{ it.text }}
+              {{ it.title }}
               <span
                 :class="
                   activeIdx == idx
                     ? 'rotate-180 bg-indigo-500 text-white pr-3 pl-[14px] w-10 h-10 text-xs py-3 rounded-full absolute right-3 phone:top-[20px] duration-500 phone2:top-3'
-                    : 'dark:bg-[rgb(31,28,45)] dark:text-white text-neutral-700 bg-blue-200 bg-opacity-10 px-4 w-10 h-10 text-xs py-3 rounded-full absolute right-3 phone:top-5 duration-500 phone2:top-3'
+                    : 'dark:bg-[rgb(31,28,45)] dark:text-white text-neutral-700 bg-blue-200 bg-opacity-10 px-4 w-10 h-10 text-xs py-3 rounded-full absolute right-3 top-2 duration-500 phone2:top-3'
                 "
               >
                 ▼
@@ -70,19 +70,7 @@ const showText = (idx) => {
                     : 'opacity-50 duration-500 text-sm md:text-base'
                 "
               >
-                Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper.
-                Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus
-                adipiscing gravida et consequat lobortis arcu velit. Nibh
-                pharetra fermentum duis accumsan lectus non. Massa cursus
-                molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus
-                gravida adipiscing euismod montes, duis egestas. Vehicula eu
-                <br /><br />
-                etiam quam tristique tincidunt suspendisse ut consequat. Ornare
-                senectus fusce dignissim ut. Integer consequat in eu tortor,
-                faucibus et lacinia posuere. Turpis sit viverra lorem
-                suspendisse lacus aliquam auctor vulputate. Quis egestas aliquam
-                nunc purus lacus, elit leo elit facilisi. Dignissim amet
-                adipiscing massa integer.
+                {{ it.text }}
               </span>
             </div>
           </div>
@@ -126,10 +114,14 @@ const showText = (idx) => {
       </section>
     </div>
     <footer class="border-t border-gray-300 dark:border-gray-700">
-      <p class="font-semibold dark:text-gray-200 text-center mt-10">
-        © All rights reserved. Made with difficulty by Alx
-      </p>
+      <div class="container px-2">
+        <p class="font-semibold text-sm text-gray-500 dark:text-gray-500 mt-10">
+          Телефон: +998 (71) 2078080 <br />E-mail:info@dgb.uz Telegram: @dpaybot
+          <br />Рабочий график: с ПН по ПТ с 9:00 до 18:00 <br />Круглосуточная
+          горячая линия: +998 (71) 200-95-00, +998 (71) 200-89-00 <br />
+          OOO “RAQAMLI BIZNES AGREGATOR”
+        </p>
+      </div>
     </footer>
   </section>
 </template>
-<style scoped></style>

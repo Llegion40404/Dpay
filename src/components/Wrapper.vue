@@ -11,8 +11,9 @@
       >
         <p class="mb-7 dark:text-white">Manage All Your Money in One App</p>
         <p class="tracking-tight text-lg">
-          We offer you a new generation of the mobile banking.<br />
-          Save, spend & manage money in your pocket.
+          Dpay - это платежная система и мобильный банкинг в Узбекистане,
+          быстрая оплата через мобильное приложение с использованием пластиковой
+          карты UZCARD и HUMO.
         </p>
         <div
           class="flex gap-9 md2:justify-start semimd:gap-8 semimd:pt-20 phone:gap-4 pt-16 phone:flex-col poco:pt-10 poco:flex-row poco:justify-center md:items-center"

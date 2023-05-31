@@ -18,7 +18,7 @@ let carousel = ref(null);
         How Does It Work?
       </h1>
       <img
-        class="absolute md:h-[480px] md2:left-[310px] big2:left-[520px] big3:left-[540px] 1xl:left-[585px] 2xl:left-[620px] big:h-[600px] big:w-[320px] big:left-[490px] lg:w-[270px] xl:left-[415px] lg:left-[375px] md2:w-[240px] semimd:h-[530px] semimd:left-[348px] semimd:w-[265px] md:left-[280px] md:w-[220px] sm2:left-[205px] poco2:left-[125px] sm:left-[165px] poco:w-[310px] poco:top-[145px] poco:h-[570px] poco:left-[85px] phone2:w-[273px] phone2:left-[63px] phone2:h-[555px] phone:left-[49px] phone:top-36 phone:h-[442px] phone:w-[221px]"
+        class="absolute md:h-[478px] md2:left-[310px] semibig:left-[460px] big2:left-[520px] big3:left-[540px] 1xl:left-[585px] 2xl:left-[620px] big:h-[598px] big:w-[320px] big:left-[490px] lg:w-[270px] xl:left-[415px] lg:left-[375px] md2:w-[240px] semimd:h-[528px] semimd:left-[348px] semimd:w-[265px] md:left-[280px] md:w-[220px] sm2:left-[205px] poco2:left-[125px] sm:left-[165px] poco:w-[310px] poco:top-[145px] poco:h-[570px] poco:left-[85px] phone2:w-[273px] phone2:left-[63px] phone2:h-[555px] phone:left-[49px] phone:top-36 phone:h-[442px] phone:w-[221px]"
         width="326"
         src="https://dpay.uz/wp/wp-content/plugins/silicon-elementor/assets/images/phone-frame.png"
         alt=""

@@ -50,7 +50,7 @@ const showText = (idx) => {
                 :class="
                   activeIdx == idx
                     ? 'rotate-180 bg-indigo-500 text-white pr-3 pl-[14px] w-10 h-10 text-xs py-3 rounded-full absolute right-3 phone:top-2 duration-500 phone2:top-3'
-                    : 'dark:bg-[rgb(31,28,45)] dark:text-white text-neutral-700 bg-blue-200 bg-opacity-10 px-4 w-10 h-10 text-xs py-3 rounded-full absolute right-3 top-2 duration-500 phone2:top-3'
+                    : 'dark:bg-[rgb(31,28,45)] dark:text-white text-neutral-700 bg-blue-400 bg-opacity-10 px-[15px] w-10 h-10 text-xs py-3 rounded-full absolute right-3 top-2 duration-500 phone2:top-3'
                 "
               >
                 ▼

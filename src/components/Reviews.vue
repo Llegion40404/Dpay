@@ -45,7 +45,7 @@ let carousel = ref(null);
     >
       <Slide
         class="pb-20 poco2:mx-5"
-        v-for="(user, idx) in resource.characters"
+        v-for="(user, idx) in resource.ru.characters"
         :key="idx"
       >
         <div class="pt-10 phone:w-full phone:flex flex-col">

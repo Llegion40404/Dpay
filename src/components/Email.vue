@@ -42,7 +42,7 @@ const showText = (idx) => {
                 ? 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 border-t-0 first:border-t cursor-pointer first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
                 : 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 first:border-t border-t-0 cursor-pointer first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
             "
-            v-for="(it, idx) in resource.divisions"
+            v-for="(it, idx) in resource.ru.divisions"
           >
             <div class="py-4 px-3 w-9/12 h-auto phone2:py-5 font-semibold">
               {{ it.title }}

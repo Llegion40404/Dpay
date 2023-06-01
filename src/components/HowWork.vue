@@ -3,7 +3,7 @@ import { resource } from "./resources";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
 import { ref } from "vue";
-const list = resource.slides;
+const list = resource.ru.slides;
 const currentSlide = ref(0);
 let carousel = ref(null);
 </script>

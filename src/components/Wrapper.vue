@@ -9,7 +9,9 @@
       <article
         class="semimd:flex xl:w-[750px] phone:pt-40 self-center md:pt-0 semimd:flex-col font-bold text-indigo-500 semimd:pb-16 md:w-9/12"
       >
-        <p class="mb-7 dark:text-white">Manage All Your Money in One App</p>
+        <p class="mb-7 dark:text-white text-2xl">
+          Manage All Your Money in One App
+        </p>
         <p class="tracking-tight text-lg">
           Dpay - это платежная система и мобильный банкинг в Узбекистане,
           быстрая оплата через мобильное приложение с использованием пластиковой

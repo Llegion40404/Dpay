@@ -2,8 +2,8 @@
 import { register } from "swiper/element/bundle";
 import { resource } from "./resources";
 register();
-const logos = resource.logos;
-const feature = resource.features;
+const logos = resource.ru.logos;
+const feature = resource.ru.features;
 </script>
 <template>
   <section id="more" class="container py-20 poco:px-2 phone:pb-0 semimd:pb-28">
@@ -26,7 +26,7 @@ const feature = resource.features;
         /></swiper-slide>
       </swiper-container>
     </div>
-    <article class="pt-32 phone:pt-20 flex justify-around">
+    <article class="flex pt-20 justify-around">
       <div class="w-7/12 phone:hidden semimd:block">
         <img src="../img/phone-features.png" alt="phone image" />
       </div>

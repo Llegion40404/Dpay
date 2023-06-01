@@ -39,16 +39,19 @@ const blockScroll = () => {
           <RouterLink
             class="font-semibold opacity-90 text-base phone:hidden semimd:block"
             to="/"
-            >Mobile App Showcase</RouterLink
-          >
+            >Mobile App Showcase
+          </RouterLink>
         </div>
         <div class="flex items-center">
           <div class="mr-20 flex items-center phone:hidden lg:flex">
             <span
-              class="dark:bg-white bg-black mx-3 px-2 rounded-full py-1 dark:text-black"
+              class="dark:bg-white bg-black mx-3 px-2 rounded-full py-1 dark:text-black cursor-pointer"
               >RU</span
             >
-            <span class="bg-white px-2 rounded-full py-1 text-black">UZ</span>
+            <span
+              class="bg-white px-2 rounded-full py-1 text-black cursor-pointer"
+              >UZ</span
+            >
             <a class="ml-12" href="tel:+9989999999">Contact Us</a>
           </div>
           <div class="flex items-center">

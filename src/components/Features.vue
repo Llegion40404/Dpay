@@ -73,17 +73,5 @@ const feature = resource.ru.features;
         </div>
       </article>
     </article>
-    <div
-      class="group fixed xl:top-[85vh] z-50 xl:right-20 phone:right-3 phone:top-[80vh]"
-    >
-      <a
-        href="#top"
-        class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-70 text-white px-[20px] py-5"
-        ><span
-          class="absolute top-5 right-16 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-300"
-          >Top</span
-        ></a
-      >
-    </div>
   </section>
 </template>

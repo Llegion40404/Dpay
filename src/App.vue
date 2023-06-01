@@ -24,7 +24,7 @@ const blockScroll = () => {
   <section class="wraper">
     <nav
       id="top"
-      class="absolute flex justify-between py-4 sm:px-3 phone:py-3 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
+      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
       :class="isShown ? 'overflow-visible' : 'overflow-hidden'"
     >
       <div
@@ -45,11 +45,11 @@ const blockScroll = () => {
         <div class="flex items-center">
           <div class="mr-20 flex items-center phone:hidden lg:flex">
             <span
-              class="dark:bg-white bg-black mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
+              class="dark:bg-white bg-gray-500 mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
               >RU</span
             >
             <span
-              class="dark:bg-white bg-black text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
+              class="dark:bg-white bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
               >UZ</span
             >
             <a class="ml-12" href="tel:+9989999999">Contact Us</a>
@@ -86,8 +86,8 @@ const blockScroll = () => {
       <div
         :class="
           isShown
-            ? 'fixed top-0 translate-x-0 overflow-hidden z-30 h-screen w-screen bg-black bg-opacity-60'
-            : 'fixed top-0 h-screen w-screen translate-x-[10000px]'
+            ? 'fixed top-0 left-0 translate-x-0 overflow-hidden z-30 h-screen w-screen bg-black bg-opacity-60'
+            : 'fixed top-0 bg-red-400 h-screen w-screen translate-x-[10000px]'
         "
       >
         <div
@@ -107,6 +107,18 @@ const blockScroll = () => {
         </div>
       </div>
     </nav>
+    <div
+      class="group fixed xl:top-[85vh] z-50 lg:right-20 phone:right-3 phone:top-[80vh]"
+    >
+      <a
+        href="#top"
+        class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-90 text-white px-[20px] py-5"
+        ><span
+          class="absolute top-5 right-20 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-300"
+          >Top</span
+        ></a
+      >
+    </div>
     <RouterView />
   </section>
 </template>

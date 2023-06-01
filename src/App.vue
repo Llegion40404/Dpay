@@ -43,9 +43,9 @@ const blockScroll = () => {
           >
         </div>
         <div class="flex items-center">
-          <div class="mr-20 flex items-center phone:hidden">
-            <span class="bg-white px-2 rounded-full py-1 text-black">EN</span>
-            <span class="bg-white mx-3 px-2 rounded-full py-1 text-black"
+          <div class="mr-20 flex items-center phone:hidden lg:flex">
+            <span
+              class="dark:bg-white bg-black mx-3 px-2 rounded-full py-1 dark:text-black"
               >RU</span
             >
             <span class="bg-white px-2 rounded-full py-1 text-black">UZ</span>

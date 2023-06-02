@@ -72,7 +72,7 @@ let carousel = ref(null);
           <footer class="h-auto ml-2 pt-5 flex items-center text-black">
             <img width="55" :src="user.thumb" alt="user" />
             <div class="text-left ml-8">
-              <h2 class="font-semibold dark:text-white">Name Surename</h2>
+              <h2 class="font-semibold dark:text-white">Name Surname</h2>
               <span class="text-gray-400">Software Engineer</span>
             </div>
           </footer>

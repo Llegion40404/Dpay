@@ -25,7 +25,6 @@ const blockScroll = () => {
     <nav
       id="top"
       class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
-      :class="isShown ? 'overflow-visible' : 'overflow-hidden'"
     >
       <div
         class="container semimd:px-0 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
@@ -52,7 +51,23 @@ const blockScroll = () => {
               class="dark:bg-white bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
               >UZ</span
             >
-            <a class="ml-12" href="tel:+9989999999">Contact Us</a>
+            <div class="ml-12 group cursor-pointer relative">
+              Contact us
+              <div
+                class="bg-slate-200 px-4 h-0 group-hover:h-24 group-active:h-24 group-active:py-2 overflow-hidden rounded group-hover:py-2 duration-700 absolute top-8 w-52 shadow-lg flex flex-col right-10"
+              >
+                <a href="tel:+998712078080"
+                  ><i class="fa-solid fa-phone mr-3"></i>+998 (71) 2078080</a
+                >
+                <a href="mailto:info@dgb.uz"
+                  ><i class="fa-sharp fa-regular fa-envelope mr-3 my-2"></i>
+                  info@dgb.uz</a
+                >
+                <a href="https://t.me/dpaybot"
+                  ><i class="fa-brands fa-telegram mr-3"></i>dpaybot</a
+                >
+              </div>
+            </div>
           </div>
           <div class="flex items-center">
             <span
@@ -86,15 +101,15 @@ const blockScroll = () => {
       <div
         :class="
           isShown
-            ? 'fixed top-0 left-0 translate-x-0 overflow-hidden z-30 h-screen w-screen bg-black bg-opacity-60'
-            : 'fixed top-0 bg-red-400 h-screen w-screen translate-x-[10000px]'
+            ? 'fixed top-0 left-0 translate-x-0 z-30 h-screen w-screen bg-black bg-opacity-60'
+            : 'fixed top-0 left-0 bg-red-400 h-0 w-0 translate-x-[100vw]'
         "
       >
         <div
           :class="
             isShown
-              ? 'bg-white dark:bg-[rgb(19,16,34)] h-full absolute right-0 translate-x-0 transition-all duration-700 p-20  w-[90vw]'
-              : 'translate-x-[1000px] h-screen transition-all w-[90vw] right-0 p-20 duration-700'
+              ? 'bg-white dark:bg-[rgb(19,16,34)] h-screen absolute right-0 translate-x-0 duration-700 p-20 w-[90vw]'
+              : 'translate-x-[100vw] bg-white h-screen absolute w-[90vw] right-0 p-20 duration-700'
           "
         >
           <i
@@ -111,6 +126,7 @@ const blockScroll = () => {
       class="group fixed xl:top-[85vh] z-50 lg:right-20 phone:right-3 phone:top-[80vh]"
     >
       <a
+        v-show="!isShown"
         href="#top"
         class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-90 text-white px-[20px] py-5"
         ><span

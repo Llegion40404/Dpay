@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <main
-    class="h-[90vh] 2xl:h-[93vh] xl:h-[110vh] phone:h-auto sm:h-[133vh] md:h-[80vh] semimd:h-screen phone:overflow-visible phone:text-center md:text-left overflow-hidden flex justify-between bg-gradient-to-b from-[rgb(254,254,255)] to-[rgb(239,239,253)] dark:bg-gradient-to-b dark:from-[rgb(35,32,49)] dark:to-[rgb(29,22,49)]"
+    class="h-[90vh] 2xl:h-[93vh] xl:h-[110vh] phone:h-auto sm:h-[133vh] md:h-[80vh] semimd:h-screen phone:text-center md:text-left flex justify-between bg-gradient-to-b from-[rgb(254,254,255)] to-[rgb(239,239,253)] dark:bg-gradient-to-b dark:from-[rgb(35,32,49)] dark:to-[rgb(29,22,49)]"
   >
     <div
       class="container relative lg:px-3 semimd:px-0 phone:px-3 phone:flex-col md:flex-row flex md:justify-between sm:justify-normal"

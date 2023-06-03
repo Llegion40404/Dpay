@@ -10,7 +10,7 @@ let carousel = ref(null);
 <template>
   <div class="dark:bg-[rgb(31,28,45)] bg-[rgb(243,246,255)]">
     <section
-      class="dark:text-white pt-20 pb-10 justify-center container overflow-hidden relative"
+      class="dark:text-white pt-20 pb-10 justify-center container relative"
     >
       <h1
         class="text-base dark:text-white text-indigo-600 text-center mb-20 phone:mb-10 font-semibold"

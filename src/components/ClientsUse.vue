@@ -31,11 +31,11 @@ const isShown = ref(false);
         </div>
         <div
           @click="isShown = !isShown"
-          class="group video cursor-pointer flex justify-end phone:w-full md:self-center h-full mt-20 dark:opacity-60 dark:hover:opacity-80 relative"
+          class="group duration-500 cursor-pointer flex justify-end phone:w-full md:self-center h-full mt-20 dark:opacity-60 dark:hover:opacity-100 relative"
         >
           <div v-show="!isShown">
             <i
-              class="fa-solid fa-play group-hover:text-white group-hover:bg-[rgb(99,102,241)] text-gray-600 text-lg bg-white dark:bg-[rgb(41,43,62,0.2)] dark:group-hover:bg-[rgb(99,102,241)] dark:group-hover:text-white rounded-full pl-8 pr-7 py-6 absolute dark:text-indigo-300 phone:top-14 phone:left-28 phone2:top-20 phone2:left-40 poco:left-48 poco:top-24 poco2:left-[240px] poco2:top-32 sm:left-[275px] sm:top-40 sm2:top-44 sm2:left-[320px] md:top-[90px] md:left-52 md2:top-24 md2:left-56 semimd:top-28 semimd:left-64 lg:left-[275px] lg:top-32 xl:left-[300px] xl:top-36 semibig:top-40 semibig:left-80 big:top-44 big:left-96 big3:left-[410px] 1xl:left-[440px] 1xl:top-48 2xl:left-[460px] 2xl:top-52"
+              class="fa-solid fa-play duration-500 group-hover:text-white group-hover:bg-[rgb(99,102,241)] text-gray-600 text-lg bg-white dark:bg-[rgb(41,43,62,0.2)] dark:group-hover:bg-[rgb(99,102,241)] dark:group-hover:text-white rounded-full pl-8 pr-7 py-6 absolute dark:text-indigo-300 phone:top-14 phone:left-28 phone2:top-20 phone2:left-40 poco:left-48 poco:top-24 poco2:left-[240px] poco2:top-32 sm:left-[275px] sm:top-40 sm2:top-44 sm2:left-[320px] md:top-[90px] md:left-52 md2:top-24 md2:left-56 semimd:top-28 semimd:left-64 lg:left-[275px] lg:top-32 xl:left-[300px] xl:top-36 semibig:top-40 semibig:left-80 big:top-44 big:left-96 big3:left-[410px] 1xl:left-[440px] 1xl:top-48 2xl:left-[460px] 2xl:top-52"
             ></i>
             <img
               width="746"
@@ -60,7 +60,7 @@ const isShown = ref(false);
     <Reviews />
   </section>
 </template>
-<style scoped>
+<!-- <style scoped>
 .group,
 .group * {
   transition: 0.5s;
@@ -68,4 +68,4 @@ const isShown = ref(false);
 .video {
   transition: 0.3s;
 }
-</style>
+</style> -->

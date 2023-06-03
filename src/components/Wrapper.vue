@@ -79,4 +79,17 @@
       </div>
     </div>
   </main>
+  <div
+    class="group fixed xl:top-[85vh] z-50 lg:right-20 phone:right-3 phone:top-[80vh]"
+  >
+    <a
+      v-show="!isShown"
+      href="#top"
+      class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-90 text-white px-[20px] py-5"
+      ><span
+        class="absolute top-5 right-20 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-300"
+        >Top</span
+      ></a
+    >
+  </div>
 </template>

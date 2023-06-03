@@ -6,8 +6,8 @@ const logos = resource.ru.logos;
 const feature = resource.ru.features;
 </script>
 <template>
-  <section id="more" class="container py-20 poco:px-2 phone:pb-0 semimd:pb-28">
-    <div class="px-2 flex justify-center">
+  <section class="container py-20 poco:px-2 phone:pb-0 semimd:pb-28">
+    <div id="more" class="px-2 flex justify-center">
       <swiper-container
         class="py-5"
         :space-between="15"

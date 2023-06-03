@@ -59,8 +59,8 @@ const showText = (idx) => {
             <div
               :class="
                 activeIdx == idx
-                  ? 'max-h-[500px] border-t dark:border-white dark:border-opacity-30 my-1 py-4 px-3 duration-700 md:pr-10'
-                  : 'max-h-0 duration-700 px-3 md:pr-10'
+                  ? 'max-h-[400px] border-t dark:border-white ease-in-out dark:border-opacity-30 my-1 py-4 px-3 duration-700 md:pr-10'
+                  : 'max-h-0 duration-700 px-3 md:pr-10 ease-in-out'
               "
             >
               <span

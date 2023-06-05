@@ -4,9 +4,11 @@ import Email from "@/components/Email.vue";
 import Features from "@/components/Features.vue";
 import HowWork from "@/components/HowWork.vue";
 import Wrapper from "@/components/Wrapper.vue";
+import { resource } from "@/components/resources";
 
 import { ref } from "vue";
 
+let lang = ref(localStorage.getItem("lang") || "ru");
 let theme = localStorage.getItem("theme") || false;
 let isLight = theme ? ref(false) : ref(true);
 let isShown = ref(false);
@@ -22,6 +24,10 @@ const switchLight = () => {
 };
 const blockScroll = () => {
   document.querySelector("body").classList.toggle("overflow-hidden");
+};
+const switchLang = (l) => {
+  lang.value = l;
+  localStorage.setItem("lang", l);
 };
 </script>
 <template>
@@ -47,10 +53,12 @@ const blockScroll = () => {
       <div class="flex items-center">
         <div class="mr-20 flex items-center">
           <span
+            @click="switchLang('ru')"
             class="dark:bg-white phone:hidden md:inline bg-gray-500 mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
             >RU</span
           >
           <span
+            @click="switchLang('uz')"
             class="dark:bg-white phone:hidden md:inline bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
             >UZ</span
           >
@@ -119,19 +127,41 @@ const blockScroll = () => {
       >
         <i
           @click="(isShown = false), blockScroll()"
-          class="fa-solid fa-xmark fa-2x absolute top-5 right-10"
+          class="fa-solid fa-xmark fa-2x absolute top-3 right-5"
         ></i>
-        <ul>
-          <li v-for="l in 7">some links</li>
-        </ul>
+        <div class="flex justify-center">
+          <span
+            @click="switchLang('ru'), (isShown = false)"
+            class="dark:bg-white bg-gray-500 mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
+            >RU</span
+          >
+          <span
+            @click="switchLang('uz'), (isShown = false)"
+            class="dark:bg-white bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
+            >UZ</span
+          >
+        </div>
       </div>
     </div>
+    <div
+      class="group fixed xl:top-[85vh] z-50 duration-300 lg:right-20 phone:right-3 phone:top-[80vh]"
+      :class="isShown == false ? 'opacity-100' : 'opacity-0'"
+    >
+      <a
+        href="#top"
+        class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-90 text-white px-[20px] py-5"
+        ><span
+          class="absolute top-5 right-20 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-700"
+          >Top</span
+        ></a
+      >
+    </div>
   </nav>
-  <Wrapper />
-  <Features />
-  <HowWork />
-  <ClientsUse />
-  <Email />
+  <Wrapper :data="lang == 'ru' ? resource.ru : resource.uz" />
+  <Features :data="lang == 'ru' ? resource.ru : resource.uz" />
+  <HowWork :data="lang == 'ru' ? resource.ru : resource.uz" />
+  <ClientsUse :data="lang == 'ru' ? resource.ru : resource.uz" />
+  <Email :data="lang == 'ru' ? resource.ru : resource.uz" />
 </template>
 
 <style src="../style.css"></style>

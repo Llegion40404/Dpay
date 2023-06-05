@@ -1,12 +1,10 @@
-import { computed } from "vue";
-
 export const resource = {
-  switchLang: () => {
-    let isUzbek = localStorage.getItem("lang") == "ru" ? false : true;
-    let setLang = localStorage.setItem("lang", isUzbek ? "ru" : "uz");
-  },
-  getLang: computed(() => localStorage.getItem("lang")),
   ru: {
+    mainTitle:
+      "Dpay - это платежная система и мобильный банкинг в Узбекистане, быстрая оплата через мобильное приложение с использованием пластиковой карты UZCARD и HUMO.",
+    descr: "Описание и возможности системы",
+    popularQuests: "Популярные вопросы",
+    abilsTitle: "С помощью Dpay вы можете:",
     features: [
       {
         thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/payments.svg",
@@ -141,6 +139,146 @@ export const resource = {
         text: "СМС с информацией о поступлении денег на карту приходит в течение 1 минуты. СМС придёт позже, когда у вашего сотового оператора технические проблемы.",
       },
     ],
+    contacts:
+      "OOO “RAQAMLI BIZNES AGREGATOR” Телефон: +998 (71) 2078080 E-mail: info@dgb.uz Telegram: @dpaybot Рабочий график: с ПН по ПТ с 9:00 до 18:00 Круглосуточная горячая линия: +998 (71) 200-95-00, +998 (71) 200-89-00",
   },
-  uz: {},
+  uz: {
+    mainTitle:
+      "Dpay bu – O‘zbekistonda to‘lov tizimi va mobil banking, UZCARD va HUMO plastik kartalaridan foydalangan holda mobil ilova orqali tezkor to‘lov.",
+    descr: "Tizimning tavsifi va imkoniyatlari",
+    popularQuests: "Ommabop savollar",
+    abilsTitle: "Dpay bilan siz yana:",
+    features: [
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/payments.svg",
+        title: "Plastik kartalar​",
+        text: "Dpay ilovasida SMS-xabarnoma xizmatiga ulangan plastik kartalardan foydalaniladi. SMS-xabarnoma bepul ravishda, istalgan bank yoki infokioskda yoqtirishingiz mumkin.",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/security.svg",
+        title: "Pul o‘tkazmalari​",
+        text: "Dpay ilovasida pul mablag’lari kartadan kartaga bir lahzada o‘tadi. O‘tkazma qabul qiluvchining karta raqamini har gal takroran kiritib o‘tirmaslik uchun Dpay da o‘tkazma qabul qiluvchining ism-sharifini saqlab qo‘yish mumkin – keyingi safar qabul qiluvchi ismini tanlashingiz kifoya.",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/statistics.svg",
+        title: "To‘lovlar​",
+        text: "Dpay orqali bank kreditlarini, maishiy texnika uchun kreditlarni, soliqlar va yig‘imlarni, byudjet tashkilotlari xizmatlari, elektr, gaz, internet va boshqa ko‘plab xizmatlar haqlarini to‘lash mumkin.",
+      },
+      // {
+      //   thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/support.svg",
+      //   title: "",
+      //   text: "",
+      // },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/cashback.svg",
+        title: '"Joyida" to‘lash​',
+        text: '"Joyida" to‘lash – Android va iOS uchun mo‘ljallangan Dpay mobil ilovasi yordamida tovarlar va xizmatlar haqin to‘lashning muqobil usulidir.',
+      },
+    ],
+    slides: [
+      {
+        thumb:
+          "https://dpay.uz/wp/wp-content/uploads/2022/02/01-app-showcase-screens.png",
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 1.Advanced bydget managment",
+      },
+      {
+        thumb:
+          "https://dpay.uz/wp/wp-content/uploads/2022/02/02-app-showcase-screens.png",
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 2.Latest transaction history",
+      },
+      {
+        thumb:
+          "https://dpay.uz/wp/wp-content/uploads/2022/02/03-app-showcase-screens.png",
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 3.Transfers to people from your contact list",
+      },
+      {
+        thumb:
+          "https://dpay.uz/wp/wp-content/uploads/2022/02/04-app-showcase-screens.png",
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+    ],
+    logos: [
+      "https://dpay.uz/wp/wp-content/uploads/2022/02/01-brands.svg",
+      "https://dpay.uz/wp/wp-content/uploads/2022/02/02-brands.svg",
+      "https://dpay.uz/wp/wp-content/uploads/2022/02/03-brands.svg",
+      "https://dpay.uz/wp/wp-content/uploads/2022/02/04-brands.svg",
+      "https://dpay.uz/wp/wp-content/uploads/2022/02/05-brands.svg",
+      "https://dpay.uz/wp/wp-content/uploads/2022/02/06-brands.svg",
+    ],
+    howUse: [
+      "UZCARD va HUMO kartalari o'rtasida pul o'tkazmalari",
+      "YHXBB jarimalarini to'lash",
+      "Xalqaro elektron hamyonlarni to'ldirish",
+      "O‘zbekistonda kommunal to‘lovlarni to‘lash",
+      "Mahalliy va xorijiy uyali aloqa uchun to'lov",
+      "Global o'yin xizmatlari uchun to'lov",
+      "Xorijiy va mahalliy onlayn TV uchun to'lov",
+      "Onlayn do'konlarda xaridlar uchun to'lov",
+    ],
+    characters: [
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/42-avatar.png",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/43-avatar.png",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/44-avatar.png",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/45-avatar.png",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/46-avatar.png",
+      },
+      {
+        thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/47-avatar.png",
+      },
+    ],
+    divisions: [
+      {
+        title:
+          "Men toʻlamoqchi boʻlgan xizmatni dpay.uz saytidagi Toʻlovlar boʻlimida qanday topsam boʻladi?",
+        text: `"To'lovlar" xizmatidagi qidiruv satriga kerakli xizmatni yoki xizmat ko'rsatuvchi provayder nomini kiritish kifoya. Xizmat nomini lotin va kirill alifbolarida chop etishingiz mumkin. Agar kerakli xizmatni topa olmasangiz, shaklni to'ldiring. Biz xizmat ko‘rsatuvchi provayder bilan bog‘lanib, uni Dpay.uz saytiga qo‘shishga harakat qilamiz.`,
+      },
+      {
+        title: "Dpay.uz mobil ilovasida nima qilish mumkin?",
+        text: "Dpay.uz mobil ilovasida O‘zbekiston bo‘ylab mobil balansni komissiyasiz to‘ldirish, kommunal to‘lovlar, “O‘zbektelekom”, bolalar bog‘chasi, yo‘l harakati jarimalari va 10 000 dan ortiq turli xizmatlarni to‘lash mumkin.",
+      },
+      {
+        title: "Mening toʻlovim Dpay.uz’ga qanchalik tez tushadi?",
+        text: "Aksariyat xizmat ko'rsatuvchi provayderlar to'lovni 1 daqiqa ichida oladilar.",
+      },
+      {
+        title: "Tasdiqlash kodi olinmadi",
+        text: "Tasdiqlash kodi bilan SMS 1 daqiqa ichida keladi. Mobil operatoringiz texnik muammolarga duch kelganida kodli SMS keyinroq keladi. Agar kodli SMS 5 daqiqa ichida kelmasa, Dpay texnik yordamiga quyidagi +998 71 200-89-00 telefon raqami orqali murojaat qiling.",
+      },
+      {
+        title: "Karta muddati tugagan",
+        text: "Kartaning amal qilish muddatini uzaytirish uchun kartani chiqargan bankning istalgan filialiga murojaat qiling. Shaxsingizni tasdiqlash uchun pasportingizni bankka taqdim eting.",
+      },
+      {
+        title: "Karta to'xtash ro'yxatida",
+        text: "To'xtash ro'yxatidan kartani chiqarib tashlash uchun bankning istalgan filialiga murojaat qiling, kartani kim chiqargan. Shaxsingizni tasdiqlash uchun pasportingizni bankka taqdim eting.",
+      },
+      {
+        title: "Karta PIN kodini kiritish chegarasidan oshib ketdi",
+        text: "Agar jismoniy terminalda kartaning PIN-kodi noto'g'ri 3 marta kiritilsa, karta bloklanadi. Kartani blokdan chiqarish uchun kartani chiqargan bankning istalgan filialiga murojaat qiling. Shaxsingizni tasdiqlash uchun pasportingizni bankka taqdim eting.",
+      },
+      {
+        title: "Karta raqami oʻchirildi",
+        text: "Kartadagi raqam va boshqa yozuvlarni tiklash uchun kartani chiqargan bankning istalgan filialiga murojaat qiling. Shaxsingizni tasdiqlash uchun pasportingizni bankka taqdim eting. Bankdagi kartadagi raqam va barcha yozuvlar maxsus qurilma - grafik personizer yordamida tiklanadi.",
+      },
+      {
+        title: "Pul kartaga tushmagan",
+        text: "Kartaga pul tushganligi haqidagi ma'lumot bilan SMS 1 daqiqa ichida keladi. Mobil operatoringiz texnik muammolarga duch kelganda SMS keyinroq keladi.",
+      },
+    ],
+    contacts:
+      "“RAQAMLI BIZNES AGREGATOR” MChJ Telefon: +998 (71) 2078080 E-mail: info@dgb.uz Telegram: @dpaybot Ish tartibi: dushanbadan jumagacha 9:00 dan 18:00 gacha 24 soatlik ishonch telefoni: +998 (71) 200-95-00, +998 (71) 200-89-00",
+  },
 };

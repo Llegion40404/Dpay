@@ -1,8 +1,14 @@
 <script setup>
 import "vue3-carousel/dist/carousel.css";
-import { resource } from "./resources";
 import { Carousel, Slide } from "vue3-carousel";
 import { ref } from "vue";
+import { defineProps } from "vue";
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
 const currentSlide = ref(0);
 let carousel = ref(null);
 </script>
@@ -45,7 +51,7 @@ let carousel = ref(null);
     >
       <Slide
         class="pb-20 poco2:mx-5"
-        v-for="(user, idx) in resource.ru.characters"
+        v-for="(user, idx) in data.characters"
         :key="idx"
       >
         <div class="pt-10 phone:w-full phone:flex flex-col">

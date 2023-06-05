@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { defineProps } from "vue";
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
+</script>
 <template>
   <main
     class="h-[90vh] 2xl:h-[93vh] xl:h-[110vh] phone:h-auto sm:h-[133vh] md:h-[80vh] semimd:h-screen phone:text-center md:text-left flex justify-between bg-gradient-to-b from-[rgb(254,254,255)] to-[rgb(239,239,253)] dark:bg-gradient-to-b dark:from-[rgb(35,32,49)] dark:to-[rgb(29,22,49)]"
@@ -13,9 +21,7 @@
           Manage All Your Money in One App
         </p>
         <p class="tracking-tight text-lg">
-          Dpay - это платежная система и мобильный банкинг в Узбекистане,
-          быстрая оплата через мобильное приложение с использованием пластиковой
-          карты UZCARD и HUMO.
+          {{ data.mainTitle }}
         </p>
         <div
           class="flex gap-9 md2:justify-start semimd:gap-8 semimd:pt-20 phone:gap-4 pt-16 phone:flex-col poco:pt-10 poco:flex-row poco:justify-center md:items-center"
@@ -79,17 +85,4 @@
       </div>
     </div>
   </main>
-  <div
-    class="group fixed xl:top-[85vh] z-50 lg:right-20 phone:right-3 phone:top-[80vh]"
-  >
-    <a
-      v-show="!isShown"
-      href="#top"
-      class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-90 text-white px-[20px] py-5"
-      ><span
-        class="absolute top-5 right-20 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-300"
-        >Top</span
-      ></a
-    >
-  </div>
 </template>

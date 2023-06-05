@@ -1,9 +1,13 @@
 <script setup>
 import { register } from "swiper/element/bundle";
-import { resource } from "./resources";
+import { defineProps } from "vue";
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
 register();
-const logos = resource.ru.logos;
-const feature = resource.ru.features;
 </script>
 <template>
   <section class="container py-20 poco:px-2 phone:pb-0 semimd:pb-28">
@@ -20,8 +24,8 @@ const feature = resource.ru.features;
         :loop="true"
       >
         <swiper-slide
-          class="border px-3 py-8 rounded-lg border-gray-200 border-opacity-30 hover:bg-white hover:bg-opacity-10 hover:-translate-y-3 transition duration-300"
-          v-for="logo in logos"
+          class="border px-3 py-8 rounded-lg border-gray-400 border-opacity-30 hover:bg-white hover:bg-opacity-10 hover:-translate-y-3 transition duration-300"
+          v-for="logo in data.logos"
           ><img :src="logo" alt="logo"
         /></swiper-slide>
       </swiper-container>
@@ -41,15 +45,13 @@ const feature = resource.ru.features;
         <p
           class="opacity-80 text-slate-400 dark:opacity-80 font-bold dark:font-semibold text-lg mb-10"
         >
-          Dpay - это платежная система и мобильный банкинг в Узбекистане,
-          быстрая оплата через мобильное приложение с использованием пластиковой
-          карты UZCARD и HUMO.
+          {{ data.mainTitle }}
         </p>
         <div
           class="phone:flex-col flex poco2:flex-row flex-wrap justify-between"
         >
           <div
-            v-for="f in feature"
+            v-for="f in data.features"
             class="w-5/12 semibig:w-[45%] phone:w-full poco2:w-1/2 phone:text-left mb-12 phone:px-3 semimd:px-0 flex items-start gap-6 justify-between"
           >
             <img

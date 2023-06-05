@@ -1,6 +1,12 @@
 <script setup>
 import { ref } from "vue";
-import { resource } from "./resources";
+import { defineProps } from "vue";
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
 
 const activeIdx = ref(-20);
 const showText = (idx) => {
@@ -21,7 +27,7 @@ const showText = (idx) => {
           class="font-bold pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
         >
           <h3 class="text-indigo-500 dark:text-white phone:text-lg md:pr-40">
-            Популярные вопросы
+            {{ data.popularQuests }}
           </h3>
           <p
             class="text-xl text-slate-500 dark:text-indigo-400 my-7 dark:opacity-60 poco2:px-4 poco2:text-center md:text-left md:px-0"
@@ -42,7 +48,7 @@ const showText = (idx) => {
                 ? 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 border-t-0 first:border-t cursor-pointer first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
                 : 'border dark:border-white border-gray-400 border-opacity-30 dark:border-opacity-30 first:border-t border-t-0 cursor-pointer first:rounded-lg first:rounded-b-none last:rounded-b-lg relative overflow-hidden'
             "
-            v-for="(it, idx) in resource.ru.divisions"
+            v-for="(it, idx) in data.divisions"
           >
             <div class="py-4 px-3 w-9/12 h-auto phone2:py-5 font-semibold">
               {{ it.title }}
@@ -116,10 +122,7 @@ const showText = (idx) => {
     <footer class="border-t border-gray-300 dark:border-gray-700">
       <div class="container px-2">
         <p class="font-semibold text-sm text-gray-500 dark:text-gray-500 mt-10">
-          Телефон: +998 (71) 2078080 <br />E-mail:info@dgb.uz Telegram: @dpaybot
-          <br />Рабочий график: с ПН по ПТ с 9:00 до 18:00 <br />Круглосуточная
-          горячая линия: +998 (71) 200-95-00, +998 (71) 200-89-00 <br />
-          OOO “RAQAMLI BIZNES AGREGATOR”
+          {{ data.contacts }}
         </p>
       </div>
     </footer>

@@ -1,7 +1,13 @@
 <script setup>
 import { ref } from "vue";
-import { resource } from "./resources";
 import Reviews from "./Reviews.vue";
+import { defineProps } from "vue";
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true,
+  },
+});
 const isShown = ref(false);
 </script>
 <template>
@@ -15,7 +21,7 @@ const isShown = ref(false);
           <h2 class="font-bold mb-7 dark:text-white text-indigo-500">
             С помощью Dpay вы можете:
           </h2>
-          <div v-for="art in resource.ru.howUse" class="flex">
+          <div v-for="art in data.howUse" class="flex">
             <i class="fa-solid fa-circle-check text-indigo-600 mr-4 pt-1"></i>
             <p
               class="dark:opacity-40 mb-5 font-normal opacity-80 text-gray-900 phone:text-base text-lg darak:font-thin tracking-wider dark:text-indigo-300"
@@ -57,7 +63,7 @@ const isShown = ref(false);
         </div>
       </article>
     </div>
-    <Reviews />
+    <Reviews :data="data" />
   </section>
 </template>
 <!-- <style scoped>

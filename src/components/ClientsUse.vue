@@ -19,7 +19,7 @@ const isShown = ref(false);
       >
         <div class="pt-28 phone:pt-12 md:w-[530px] md2:w-9/12">
           <h2 class="font-bold mb-7 dark:text-white text-indigo-500">
-            С помощью Dpay вы можете:
+            {{ data.abilsTitle }}
           </h2>
           <div v-for="art in data.howUse" class="flex">
             <i class="fa-solid fa-circle-check text-indigo-600 mr-4 pt-1"></i>

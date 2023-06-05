@@ -54,16 +54,16 @@ const switchLang = (l) => {
         <div class="mr-20 flex items-center">
           <span
             @click="switchLang('ru')"
-            class="dark:bg-white phone:hidden md:inline bg-gray-500 mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
+            class="dark:bg-white phone:hidden semimd:inline bg-gray-500 mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
             >RU</span
           >
           <span
             @click="switchLang('uz')"
-            class="dark:bg-white phone:hidden md:inline bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
+            class="dark:bg-white phone:hidden semimd:inline bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
             >UZ</span
           >
           <div
-            class="ml-12 group cursor-pointer relative phone:hidden md:block"
+            class="ml-12 group cursor-pointer relative phone:hidden sm2:block"
           >
             Contact us
             <div
@@ -121,24 +121,38 @@ const switchLang = (l) => {
       <div
         :class="
           isShown
-            ? 'bg-white dark:bg-[rgb(19,16,34)] h-screen absolute right-0 translate-x-0 duration-700 p-20 w-[90vw]'
-            : 'translate-x-[100vw] bg-white dark:bg-[rgb(19,16,34)] h-screen absolute w-[90vw] right-0 p-20 duration-700'
+            ? 'bg-white dark:bg-[rgb(19,16,34)] h-screen absolute right-0 translate-x-0 duration-700 phone:px-5 p-20 w-[90vw] md:w-[70vw]'
+            : 'translate-x-[100vw] bg-white dark:bg-[rgb(19,16,34)] h-screen absolute w-[90vw] right-0 phone:px-5 p-20 duration-700'
         "
       >
         <i
           @click="(isShown = false), blockScroll()"
           class="fa-solid fa-xmark fa-2x absolute top-3 right-5"
         ></i>
-        <div class="flex justify-center">
+        <div class="flex justify-center semimd:hidden">
           <span
-            @click="switchLang('ru'), (isShown = false)"
+            @click="switchLang('ru'), (isShown = false), blockScroll()"
             class="dark:bg-white bg-gray-500 mx-3 px-2 rounded-full py-1 text-white dark:text-black cursor-pointer"
             >RU</span
           >
           <span
-            @click="switchLang('uz'), (isShown = false)"
+            @click="switchLang('uz'), (isShown = false), blockScroll()"
             class="dark:bg-white bg-gray-500 text-white px-2 rounded-full py-1 dark:text-black cursor-pointer"
             >UZ</span
+          >
+        </div>
+        <div
+          class="h-auto py-2 absolute bottom-4 sm2:hidden overflow-hidden duration-500 flex flex-col"
+        >
+          <a href="https://t.me/dpaybot"
+            ><i class="fa-brands fa-telegram mr-3"></i>dpaybot</a
+          >
+          <a href="mailto:info@dgb.uz"
+            ><i class="fa-sharp fa-regular fa-envelope mr-3 my-2"></i>
+            info@dgb.uz</a
+          >
+          <a href="tel:+998712078080"
+            ><i class="fa-solid fa-phone mr-3"></i>+998 (71) 2078080</a
           >
         </div>
       </div>

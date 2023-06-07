@@ -3,6 +3,7 @@ import ClientsUse from "@/components/ClientsUse.vue";
 import Email from "@/components/Email.vue";
 import Features from "@/components/Features.vue";
 import HowWork from "@/components/HowWork.vue";
+import Jobs from "@/components/Jobs.vue";
 import Wrapper from "@/components/Wrapper.vue";
 import { resource } from "@/components/resources";
 
@@ -175,6 +176,7 @@ const switchLang = (l) => {
   <Features :data="lang == 'ru' ? resource.ru : resource.uz" />
   <HowWork :data="lang == 'ru' ? resource.ru : resource.uz" />
   <ClientsUse :data="lang == 'ru' ? resource.ru : resource.uz" />
+  <Jobs :data="lang == 'ru' ? resource.ru : resource.uz" />
   <Email :data="lang == 'ru' ? resource.ru : resource.uz" />
 </template>
 

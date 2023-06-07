@@ -11,11 +11,11 @@ const props = defineProps({
 const isShown = ref(false);
 </script>
 <template>
-  <section class="text-white py-20 phone:py-0">
+  <section class="text-white md:py-10 md:pb-20 phone:py-0">
     <div class="container">
       <article
         id="video"
-        class="flex justify-between pb-20 phone:flex-col-reverse phone:px-3 md:px-0 md:flex-row xl:items-center"
+        class="flex justify-between pb-20 phone:flex-col-reverse semimd:px-5 phone:px-3 md:flex-row xl:items-center"
       >
         <div class="pt-28 phone:pt-12 md:w-[530px] md2:w-9/12">
           <h2 class="font-bold mb-7 dark:text-white text-indigo-500">

@@ -5,6 +5,18 @@ export const resource = {
     descr: "Описание и возможности системы",
     popularQuests: "Популярные вопросы",
     abilsTitle: "С помощью Dpay вы можете:",
+    jobs: {
+      title: "Работа в Dpay",
+      descr: "Мы объявляем об открытии ряда вакансий на должности:",
+      jobs: ["UX/UI дизайнера.", "Middle/Senior JAVA Developer.", "PR manager"],
+      inner: {
+        first:
+          "Нам нужны специалисты среднего уровня или тот, кто готов быстро расти, тот, кто умеет работать руками, понимать дизайн-задачи и следить за достижением результата.",
+        second:
+          "Если вы тот, кого мы ищем, то скорей присоединяйтесь к нашей дружной команде и добивайтесь успеха вместе с Dpay.",
+        email: "Отправить резюме",
+      },
+    },
     features: [
       {
         thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/payments.svg",
@@ -148,6 +160,21 @@ export const resource = {
     descr: "Tizimning tavsifi va imkoniyatlari",
     popularQuests: "Ommabop savollar",
     abilsTitle: "Dpay bilan siz yana:",
+    jobs: {
+      jobsTitle: "Dpayda biz bilan ishlang",
+      jobsDescr:
+        "Biz quyidagi bir qancha boʻsh ish oʻrinlari uchun tanlov eʼlon qilamiz:",
+      jobs: [
+        "UX/UI dizayneri.",
+        "O'rta/katta JAVA dasturchisi.",
+        "PR menejeri",
+      ],
+      jobsInner: {
+        1: "Bizga oliy yoki o'rta darajadagi mutaxassislar yoki tez o'sishga tayyor bo'lgan, o'z qo'llari bilan ishlay oladigan, dizayn vazifalarini tushunadigan va natijalarga erishishni nazorat qiladigan kishi kerak.",
+        2: "Agar siz biz izlayotgan mutaxassis bo'lsangiz, unda bizning do'stona jamoamizga qo'shiling va Dpay bilan muvaffaqiyatga erishing.",
+        email: "Rezyumeni yuborish",
+      },
+    },
     features: [
       {
         thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/payments.svg",

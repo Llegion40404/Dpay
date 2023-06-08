@@ -1,6 +1,5 @@
 <script setup>
 import { register } from "swiper/element/bundle";
-import { defineProps } from "vue";
 const props = defineProps({
   data: {
     type: Object,

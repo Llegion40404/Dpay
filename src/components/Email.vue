@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from "vue";
-import { defineProps } from "vue";
 const props = defineProps({
   data: {
     type: Object,
@@ -19,7 +18,7 @@ const showText = (idx) => {
 </script>
 <template>
   <section class="dark:text-white py-12">
-    <div class="container flex flex-col">
+    <div class="container flex flex-col md:px-3">
       <section
         class="flex phone:w-full justify-between phone:flex-col md:flex-row"
       >

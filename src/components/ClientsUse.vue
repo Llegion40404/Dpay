@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from "vue";
 import Reviews from "./Reviews.vue";
-import { defineProps } from "vue";
 const props = defineProps({
   data: {
     type: Object,
@@ -15,7 +14,7 @@ const isShown = ref(false);
     <div class="container">
       <article
         id="video"
-        class="flex justify-between pb-20 phone:flex-col-reverse semimd:px-5 phone:px-3 md:flex-row xl:items-center"
+        class="flex justify-between pb-20 phone:flex-col-reverse phone:px-3 md:flex-row xl:items-center"
       >
         <div class="pt-28 phone:pt-12 md:w-[530px] md2:w-9/12">
           <h2 class="font-bold mb-7 dark:text-white text-indigo-500">

@@ -10,7 +10,9 @@ const props = defineProps({
 register();
 </script>
 <template>
-  <section class="container py-20 poco:px-2 phone:px-2 phone:pb-0 semimd:pb-28">
+  <section
+    class="container py-20 poco:px-2 phone:px-2 md:px-5 phone:pb-0 semimd:pb-28"
+  >
     <div id="more" class="px-2 flex justify-center">
       <swiper-container
         class="py-5"

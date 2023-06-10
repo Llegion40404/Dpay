@@ -17,7 +17,7 @@ let carousel = ref(null);
       class="dark:text-white pt-20 pb-10 justify-center container relative"
     >
       <h1
-        class="text-base dark:text-white text-indigo-600 text-center mb-20 phone:mb-10 font-semibold"
+        class="text-2xl dark:text-white text-indigo-600 text-center mb-20 phone:mb-10 font-semibold"
       >
         How Does It Work?
       </h1>

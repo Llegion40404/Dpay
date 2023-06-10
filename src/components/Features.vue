@@ -38,9 +38,7 @@ register();
       <article
         class="text-white w-3/5 semimd:text-left phone:text-center phone:w-full"
       >
-        <h4
-          class="font-bold phone:text-lg mb-8 dark:text-white text-indigo-500"
-        >
+        <h4 class="font-bold text-2xl mb-8 dark:text-white text-indigo-500">
           {{ data.descr }}
         </h4>
         <p

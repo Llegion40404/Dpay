@@ -161,17 +161,19 @@ export const resource = {
     popularQuests: "Ommabop savollar",
     abilsTitle: "Dpay bilan siz yana:",
     jobs: {
-      jobsTitle: "Dpayda biz bilan ishlang",
-      jobsDescr:
+      title: "Dpayda biz bilan ishlang",
+      descr:
         "Biz quyidagi bir qancha boʻsh ish oʻrinlari uchun tanlov eʼlon qilamiz:",
       jobs: [
         "UX/UI dizayneri.",
         "O'rta/katta JAVA dasturchisi.",
         "PR menejeri",
       ],
-      jobsInner: {
-        1: "Bizga oliy yoki o'rta darajadagi mutaxassislar yoki tez o'sishga tayyor bo'lgan, o'z qo'llari bilan ishlay oladigan, dizayn vazifalarini tushunadigan va natijalarga erishishni nazorat qiladigan kishi kerak.",
-        2: "Agar siz biz izlayotgan mutaxassis bo'lsangiz, unda bizning do'stona jamoamizga qo'shiling va Dpay bilan muvaffaqiyatga erishing.",
+      inner: {
+        first:
+          "Bizga oliy yoki o'rta darajadagi mutaxassislar yoki tez o'sishga tayyor bo'lgan, o'z qo'llari bilan ishlay oladigan, dizayn vazifalarini tushunadigan va natijalarga erishishni nazorat qiladigan kishi kerak.",
+        second:
+          "Agar siz biz izlayotgan mutaxassis bo'lsangiz, unda bizning do'stona jamoamizga qo'shiling va Dpay bilan muvaffaqiyatga erishing.",
         email: "Rezyumeni yuborish",
       },
     },

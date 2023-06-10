@@ -6,6 +6,7 @@ import HowWork from "@/components/HowWork.vue";
 import Jobs from "@/components/Jobs.vue";
 import Wrapper from "@/components/Wrapper.vue";
 import { resource } from "@/components/resources";
+import { computed } from "vue";
 
 import { ref } from "vue";
 
@@ -167,8 +168,8 @@ const switchLang = (l) => {
         class="fa-solid fa-angle-up rounded-full bg-gray-700 bg-opacity-90 text-white px-[20px] py-5"
         ><span
           class="absolute top-5 right-20 text-black dark:text-white text-xs tracking-wider opacity-0 group-hover:opacity-100 duration-700"
-          >Top</span
-        ></a
+          >Top
+        </span></a
       >
     </div>
   </nav>
@@ -176,7 +177,6 @@ const switchLang = (l) => {
   <Features :data="lang == 'ru' ? resource.ru : resource.uz" />
   <HowWork :data="lang == 'ru' ? resource.ru : resource.uz" />
   <ClientsUse :data="lang == 'ru' ? resource.ru : resource.uz" />
-  <Jobs :data="lang == 'ru' ? resource.ru : resource.uz" />
   <Email :data="lang == 'ru' ? resource.ru : resource.uz" />
 </template>
 

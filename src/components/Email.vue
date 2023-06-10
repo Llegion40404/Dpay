@@ -25,7 +25,9 @@ const showText = (idx) => {
         <article
           class="font-bold pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
         >
-          <h3 class="text-indigo-500 dark:text-white phone:text-lg md:pr-40">
+          <h3
+            class="text-indigo-500 dark:text-white phone:text-xl poco:text-2xl md:text-3xl md:pr-40"
+          >
             {{ data.popularQuests }}
           </h3>
           <p

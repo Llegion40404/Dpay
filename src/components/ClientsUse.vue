@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import Reviews from "./Reviews.vue";
+import Jobs from "./Jobs.vue";
 const props = defineProps({
   data: {
     type: Object,
@@ -17,7 +18,9 @@ const isShown = ref(false);
         class="flex justify-between pb-20 phone:flex-col-reverse phone:px-3 md:flex-row xl:items-center"
       >
         <div class="pt-28 phone:pt-12 md:w-[530px] md2:w-9/12">
-          <h2 class="font-bold mb-7 dark:text-white text-indigo-500">
+          <h2
+            class="font-bold mb-7 phone:text-xl poco:text-2xl dark:text-white text-indigo-500"
+          >
             {{ data.abilsTitle }}
           </h2>
           <div v-for="art in data.howUse" class="flex">
@@ -62,6 +65,7 @@ const isShown = ref(false);
         </div>
       </article>
     </div>
+    <Jobs :data="data" />
     <Reviews :data="data" />
   </section>
 </template>

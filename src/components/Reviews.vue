@@ -12,9 +12,9 @@ const currentSlide = ref(0);
 let carousel = ref(null);
 </script>
 <template>
-  <section class="py-20 phone:py-0">
+  <section class="py-20 phone:py-0 mt-40 md2:mt-52">
     <h1
-      class="text-indigo-600 dark:text-white font-bold text-lg text-center mb-20 poco:mb-10"
+      class="text-indigo-600 dark:text-white font-bold text-xl poco:text-2xl text-center mb-20 poco:mb-10"
     >
       Clients are Loving Our App
     </h1>

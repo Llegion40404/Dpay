@@ -1,14 +1,117 @@
 export const resource = {
   ru: {
+    navLinks: [
+      {
+        text: "Услуги",
+        link: "Services",
+      },
+      {
+        text: "Помощь",
+        link: "Help",
+      },
+      {
+        text: "FAQs",
+        link: "FAQs",
+      },
+    ],
     mainTitle:
       "Dpay - это платежная система и мобильный банкинг в Узбекистане, быстрая оплата через мобильное приложение с использованием пластиковой карты UZCARD и HUMO.",
     descr: "Описание и возможности системы",
     popularQuests: "Популярные вопросы",
     abilsTitle: "С помощью Dpay вы можете:",
+    service: {
+      title: "Тарифы на услуги",
+      subtitle: "Обслуживание по системе Dpay",
+      subtitle2: "SMS-оповещения",
+      descr:
+        "Оплата услуг, связанных с получением и отправкой SMS-сообщений в рамках пользования услугой Dpay, списывается оператором сотовой связи непосредственно с абонентского счета клиента.",
+      smss: [
+        {
+          text: "1 SMS-сообщение, отправленное пользователю системой Dpay при успешном проведении операции (оплата/»Автоплатеж»/перевод/переброс средств/запрос баланса)",
+          price: [
+            "Ucell, Uzmobile - 21.05 сум",
+            "Beeline - 84.2 сум",
+            "Mobi - 42.1 сум",
+            "Perfectum - 25 сум",
+          ],
+        },
+        {
+          text: "1 SMS-сообщение, отправленное пользователю системой Dpay при неуспешном проведении операции (оплата/перевод/переброс средств/запрос баланса)",
+          price: ["Бесплатно"],
+        },
+        {
+          text: "1 SMS-сообщение, отправленное пользователю системой Dpay и необходимое для входа в личный кабинет (при выборе пользователем способа авторизации (входа) «Разовым SMS»)",
+          price: ["Бесплатно"],
+        },
+      ],
+      services: [
+        {
+          text: "Подключение к системе Dpay",
+          price: ["Бесплатно"],
+        },
+        {
+          text: "Использование системы Dpay",
+          price: ["Бесплатно"],
+        },
+        {
+          text: "Оплата за товары и услуги по системе Dpay",
+          price: ["0% от суммы платежа*"],
+        },
+        {
+          text: "Перевод средств с пластиковой карты на карту",
+          price: ["1% от суммы перевода"],
+        },
+        {
+          text: "История платежей (в месяц)",
+          price: ["1000 сум"],
+        },
+        {
+          text: "Открытие Dpay-кошелька",
+          price: ["Бесплатно"],
+        },
+        {
+          text: "Пополнение Dpay-кошелька",
+          price: ["Бесплатно"],
+        },
+        {
+          text: "Перевод с Dpay-кошелька на Dpay-кошелёк",
+          price: ["0%"],
+        },
+        {
+          text: "Перевод с Dpay-кошелька на пластиковые карты",
+          price: ["1.5% от суммы перевода"],
+        },
+        {
+          text: "Пополнение Dpay-кошелька через систему PAYNET",
+          price: ["2.0%"],
+        },
+        {
+          text: "Пополнение Dpay-кошелька с международных карт VISA и MasterCARD",
+          price: ["3.7%"],
+        },
+        {
+          text: "Идентификация физического лица",
+          price: ["2250 сум"],
+        },
+      ],
+    },
     jobs: {
       title: "Работа в Dpay",
       descr: "Мы объявляем об открытии ряда вакансий на должности:",
-      jobs: ["UX/UI дизайнера.", "Middle/Senior JAVA Developer.", "PR manager"],
+      jobs: [
+        {
+          text: "UX/UI дизайнера.",
+          icon: "fa-brands fa-uikit text-green-400",
+        },
+        {
+          text: "Middle/Senior JAVA Developer.",
+          icon: "fa-brands fa-java text-yellow-400",
+        },
+        {
+          text: "PR manager",
+          icon: "fa-solid fa-user-tie text-sky-400",
+        },
+      ],
       inner: {
         first:
           "Нам нужны специалисты среднего уровня или тот, кто готов быстро расти, тот, кто умеет работать руками, понимать дизайн-задачи и следить за достижением результата.",
@@ -151,23 +254,122 @@ export const resource = {
         text: "СМС с информацией о поступлении денег на карту приходит в течение 1 минуты. СМС придёт позже, когда у вашего сотового оператора технические проблемы.",
       },
     ],
-    contacts:
-      "OOO “RAQAMLI BIZNES AGREGATOR” Телефон: +998 (71) 2078080 E-mail: info@dgb.uz Telegram: @dpaybot Рабочий график: с ПН по ПТ с 9:00 до 18:00 Круглосуточная горячая линия: +998 (71) 200-95-00, +998 (71) 200-89-00",
+    contacts: [
+      "OOO “RAQAMLI BIZNES AGREGATOR”",
+      "Телефон: +998 (71) 2078080",
+      "E-mail: info@dgb.uz",
+      "Telegram: @dpaybot",
+      "Рабочий график: с ПН по ПТ с 9:00 до 18:00",
+      "Круглосуточная горячая линия: +998 (71) 200-95-00, +998 (71) 200-89-00",
+    ],
   },
   uz: {
+    navLinks: [
+      { text: "Xizmatlar", link: "Services" },
+      { text: "Yordam", link: "Help" },
+      {
+        text: "FAQs",
+        link: "FAQs",
+      },
+    ],
     mainTitle:
       "Dpay bu – O‘zbekistonda to‘lov tizimi va mobil banking, UZCARD va HUMO plastik kartalaridan foydalangan holda mobil ilova orqali tezkor to‘lov.",
     descr: "Tizimning tavsifi va imkoniyatlari",
     popularQuests: "Ommabop savollar",
     abilsTitle: "Dpay bilan siz yana:",
+    service: {
+      title: "Xizmatlar uchun tariflar",
+      subtitle: "Dpay tizimi bo'yicha xizmat ko'rsatish",
+      subtitle2: "SMS-xabarnomalar",
+      descr:
+        "Dpay xizmatlaridan foydalanish doirasida SMS-xabarlar yuborish va olish bilan bog’liq xizmatlari uchun to’lov mobil operator tomonidan bevosita abonent hisobidan yechib olinadi.",
+      smss: [
+        {
+          text: "Dpay tizimi foydalanuvchisiga (to’lov, “Avtoto’lov”/o’tkazish/balansni so’rash) operatsiyalar muvaffaqiyatli amalga oshirilganda yuborilgan 1 SMS-xabar uchun",
+          price: [
+            "Ucell, Uzmobile - 21.05 so'm",
+            "Beeline - 84.2 so'm",
+            "Mobi - 42.1 so'm",
+            "Perfectum - 25 so'm",
+          ],
+        },
+        {
+          text: "Dpay tizimi foydalanuvchisiga (to’lov/o’tkazma/balans so’rash) operatsiyalar muvaffaqiyatli amalga oshmay qolganda yuborilgan 1 SMS-xabar uchun	Bepul",
+          price: ["Bepul"],
+        },
+        {
+          text: "Dpay tizimi foydalanuvchisiga shaxsiy kabinetga/ilovaga kirish uchun yuborilgan 1 SMS-xabar uchun",
+          price: ["Bepul"],
+        },
+      ],
+      services: [
+        {
+          text: "Dpay tizimiga ulanish",
+          price: ["Bepul"],
+        },
+        {
+          text: "Dpay tizimidan foydalanish",
+          price: ["Bepul"],
+        },
+        {
+          text: "Dpay tizimi orqali mahsulot va xizmatlarga uchun to’lovlar",
+          price: ["To’lov summasidan 0%*"],
+        },
+        {
+          text: "Plastik kartadan boshqa kartaga mablag’ o’tkazish",
+          price: ["O’tkazma summasidan 1%"],
+        },
+        {
+          text: "To’lovlar tarixi (oyiga)",
+          price: ["1000 so'm"],
+        },
+        {
+          text: "Dpay-Hamyonni ochish",
+          price: ["Bepul"],
+        },
+        {
+          text: "Dpay-Hamyonni to'ldirish",
+          price: ["Bepul"],
+        },
+        {
+          text: "Dpay-Hamyondan Dpay-Hamyonga mablag' o'tkazish",
+          price: ["0%"],
+        },
+        {
+          text: "Dpay-Hamyondan kartaga mablag’ o’tkazish",
+          price: ["O’tkazma summasidan 1,5%"],
+        },
+        {
+          text: "PAYNET tizimi orqali Dpay-Hamyonni to'ldirish",
+          price: ["2%"],
+        },
+        {
+          text: "VISA va MasterCARD xalqaro kartalari orqali Dpay-Hamyonni to'ldirish",
+          price: ["3.7%"],
+        },
+        {
+          text: "Jismoniy shaxs identifikatsiyasi",
+          price: ["2250 so'm"],
+        },
+      ],
+    },
     jobs: {
       title: "Dpayda biz bilan ishlang",
       descr:
         "Biz quyidagi bir qancha boʻsh ish oʻrinlari uchun tanlov eʼlon qilamiz:",
       jobs: [
-        "UX/UI dizayneri.",
-        "O'rta/katta JAVA dasturchisi.",
-        "PR menejeri",
+        {
+          text: "UX/UI dizayneri.",
+          icon: "fa-brands fa-uikit text-green-400",
+        },
+        {
+          text: "O'rta/katta JAVA dasturchisi.",
+          icon: "fa-brands fa-java text-yellow-400",
+        },
+        {
+          text: "PR menejeri",
+          icon: "fa-solid fa-user-tie text-sky-400",
+        },
       ],
       inner: {
         first:
@@ -307,7 +509,13 @@ export const resource = {
         text: "Kartaga pul tushganligi haqidagi ma'lumot bilan SMS 1 daqiqa ichida keladi. Mobil operatoringiz texnik muammolarga duch kelganda SMS keyinroq keladi.",
       },
     ],
-    contacts:
-      "“RAQAMLI BIZNES AGREGATOR” MChJ Telefon: +998 (71) 2078080 E-mail: info@dgb.uz Telegram: @dpaybot Ish tartibi: dushanbadan jumagacha 9:00 dan 18:00 gacha 24 soatlik ishonch telefoni: +998 (71) 200-95-00, +998 (71) 200-89-00",
+    contacts: [
+      "“RAQAMLI BIZNES AGREGATOR” MChJ",
+      "Telefon: +998 (71) 2078080",
+      "E-mail: info@dgb.uz",
+      "Telegram: @dpaybot",
+      "Ish tartibi: dushanbadan jumagacha 9:00 dan 18:00 gacha",
+      "24 soatlik ishonch telefoni: +998 (71) 200-95-00, +998 (71) 200-89-00",
+    ],
   },
 };

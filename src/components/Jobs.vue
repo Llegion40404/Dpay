@@ -7,7 +7,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <section class="dark:bg-[rgb(31,28,45)] py-20 mt-20">
+  <section class="dark:bg-[rgb(31,28,45)] bg-gray-500 py-20 mt-20">
     <div class="container px-3 md:px-5 dark:text-white">
       <h1
         class="phone:text-3xl sm:text-center poco2:text-4xl lg:text-5xl mb-5 poco2:mb-10"
@@ -17,27 +17,28 @@ const props = defineProps({
       <div class="md:flex items-center semibig:items-start justify-between">
         <div class="semibig:pt-10">
           <h2
-            class="phone:text-lg poco2:text-xl lg:text-3xl md2:pr-5 md2:text-2xl md2:w-5/6"
+            class="phone:text-lg poco2:text-xl lg:text-3xl md2:pr-5 md2:text-2xl md:w-5/6"
           >
             {{ data.jobs.descr }}
           </h2>
-          <ul class="my-5 text-lg list-disc px-5">
+          <ul class="my-10 text-lg px-5">
             <li
-              class="my-1 sm:font-semibold sm:text-xl"
+              class="my-4 flex phone:gap-5 poco2:gap-3 items-center sm:font-semibold sm:text-xl"
               v-for="job in data.jobs.jobs"
             >
-              {{ job }}
+              <i :class="job.icon"></i>
+              {{ job.text }}
             </li>
           </ul>
         </div>
-        <div class="flex phone:flex-col md:w-10/12 poco2:mt-10 md2:w-7/12">
+        <div class="flex phone:flex-col poco2:mt-10 md:w-7/12">
           <div
-            class="bg-gray-600 font-semibold md2:text-xl bg-opacity-30 rounded-lg p-3 md:p-5"
+            class="bg-gray-600 font-semibold md2:text-xl md2:py-10 md2:px-7 bg-opacity-30 rounded-lg p-3 md:p-5"
           >
-            <p class="mb-5 md2:mb-10">
+            <p class="mb-5 md2:mb-10 md:p-3 dark:text-slate-200">
               {{ data.jobs.inner.first }}
             </p>
-            <p>
+            <p class="md:p-3 dark:text-slate-200">
               {{ data.jobs.inner.second }}
             </p>
           </div>

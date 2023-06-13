@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { RouterLink } from "vue-router";
 const props = defineProps({
   data: {
     type: Object,
@@ -120,12 +121,5 @@ const showText = (idx) => {
         </div>
       </section>
     </div>
-    <footer class="border-t border-gray-300 dark:border-gray-700">
-      <div class="container px-2">
-        <p class="font-semibold text-sm text-gray-500 dark:text-gray-500 mt-10">
-          {{ data.contacts }}
-        </p>
-      </div>
-    </footer>
   </section>
 </template>

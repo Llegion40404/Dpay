@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import Reviews from "./Reviews.vue";
 import Jobs from "./Jobs.vue";
+import Service from "./Service.vue";
 const props = defineProps({
   data: {
     type: Object,
@@ -65,6 +66,7 @@ const isShown = ref(false);
         </div>
       </article>
     </div>
+    <Service :data="data" />
     <Jobs :data="data" />
     <Reviews :data="data" />
   </section>

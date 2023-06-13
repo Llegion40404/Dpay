@@ -13,6 +13,21 @@ const routes = [
     name: "wp",
     component: DevVue,
   },
+  {
+    path: "/FAQs",
+    name: "FAQs",
+    component: () => import("@/views/FAQs.vue"),
+  },
+  {
+    path: "/Help",
+    name: "Help",
+    component: () => import("@/views/Help.vue"),
+  },
+  {
+    path: "/Services",
+    name: "Services",
+    component: () => import("@/views/Services.vue"),
+  },
 ];
 
 const router = createRouter({

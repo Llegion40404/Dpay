@@ -75,7 +75,6 @@ const props = defineProps({
             </p>
           </div>
           <ServBtn
-            class="mt-10"
             :text="data.additional.services.detail.text"
             :icon="data.additional.services.detail.icon"
           />

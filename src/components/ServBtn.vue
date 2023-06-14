@@ -5,7 +5,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <button class="bg-indigo-600 rounded-lg p-4 font-medium my-5">
+  <button class="bg-indigo-600 rounded-lg text-center p-4 font-medium my-5">
     {{ text }}
     <i :class="icon"></i>
   </button>

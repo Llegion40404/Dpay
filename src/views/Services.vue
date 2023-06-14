@@ -50,28 +50,35 @@ const props = defineProps({
             </p>
           </div>
         </article>
-        <article class="text-left pb-10">
-          <h2 class="text-xl mb-3">
-            {{ data.additional.services.autoPay.second.title }}
-          </h2>
-          <p class="text-gray-300">
-            {{ data.additional.services.autoPay.second.descr }}
-          </p>
-          <p class="my-3 text-indigo-400">
-            {{ data.additional.services.autoPay.second.activate.title }}
-          </p>
-          <ul class="list-disk">
-            <li
-              class="my-3"
-              v-for="(t, idx) in data.additional.services.autoPay.second
-                .activate.types"
-            >
-              {{ idx + 1 }}. {{ t }}
-            </li>
-          </ul>
-          <p class="text-gray-400">
-            {{ data.additional.services.autoPay.second.activate.content }}
-          </p>
+        <article class="pb-10">
+          <div>
+            <h2 class="text-xl mb-3">
+              {{ data.additional.services.autoPay.second.title }}
+            </h2>
+            <p class="text-gray-300">
+              {{ data.additional.services.autoPay.second.descr }}
+            </p>
+            <p class="my-3 text-indigo-400">
+              {{ data.additional.services.autoPay.second.activate.title }}
+            </p>
+            <ul class="list-disk">
+              <li
+                class="my-3"
+                v-for="(t, idx) in data.additional.services.autoPay.second
+                  .activate.types"
+              >
+                {{ idx + 1 }}. {{ t }}
+              </li>
+            </ul>
+            <p class="text-gray-400">
+              {{ data.additional.services.autoPay.second.activate.content }}
+            </p>
+          </div>
+          <ServBtn
+            class="mt-10"
+            :text="data.additional.services.detail.text"
+            :icon="data.additional.services.detail.icon"
+          />
         </article>
         <article class="pb-10 pt-20">
           <h2 class="text-2xl text-indigo-400">
@@ -97,6 +104,10 @@ const props = defineProps({
               {{ data.additional.services.eventPay.activate.warn }}
             </p>
           </div>
+          <ServBtn
+            :text="data.additional.services.detail.text"
+            :icon="data.additional.services.detail.icon"
+          />
         </article>
         <article>
           <h2 class="text-2xl text-indigo-400 pt-20">

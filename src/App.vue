@@ -36,7 +36,7 @@ const switchLang = (l) => {
   <section class="wraper">
     <nav
       id="top"
-      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(19,16,34)] dark:text-white top-0 right-0 left-0"
+      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(34,28,61)] dark:text-white top-0 right-0 left-0"
     >
       <div
         class="container semimd:px-0 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
@@ -44,7 +44,7 @@ const switchLang = (l) => {
         <div class="flex items-center gap-9">
           <RouterLink
             class="font-bold text-2xl phone:text-xl poco2:text-2xl"
-            to="/wp"
+            to="/"
             >dpay</RouterLink
           >
           <RouterLink
@@ -178,7 +178,7 @@ const switchLang = (l) => {
       </div>
       <div
         class="group fixed xl:top-[85vh] z-50 duration-300 lg:right-20 phone:right-3 phone:top-[80vh]"
-        :class="isShown == false ? 'opacity-100' : 'opacity-0'"
+        :class="isShown == false ? 'block' : 'hidden'"
       >
         <a
           href="#top"
@@ -190,10 +190,10 @@ const switchLang = (l) => {
         >
       </div>
     </nav>
-    <RouterView :lang="lang" />
+    <RouterView :data="lang == 'ru' ? resource.ru : resource.uz" />
     <footer class="border-t text-white border-gray-300 dark:border-gray-700">
       <div class="container flex px-2 md:px-5 py-5">
-        <div>
+        <div class="w-full">
           <p
             v-for="contact in lang == 'ru'
               ? resource?.ru?.contacts
@@ -205,7 +205,7 @@ const switchLang = (l) => {
         </div>
         <div class="md2:flex justify-end w-full hidden">
           <RouterLink
-            class="semimd:text-3xl text-2xl mx-10 p-1 border-b-4 border-sky-400 rounded-r-xl h-11"
+            class="semimd:text-3xl text-2xl mx-10 p-1 dark:text-white text-black border-b-4 border-sky-400 rounded-r-xl h-11"
             v-for="s in lang == 'ru'
               ? resource?.ru?.navLinks
               : resource?.uz?.navLinks"

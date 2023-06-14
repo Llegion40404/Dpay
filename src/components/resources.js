@@ -1,5 +1,103 @@
 export const resource = {
   ru: {
+    additional: {
+      title: "Что такое Dpay-кошелек",
+      subtitle: "Используйте новые возможности",
+      descr:
+        "Платежная системе DPAY предлагает универсальное решение для тех, кто хочет попробовать новое – электронный кошелёк. Говоря простым языком, DPAY -кошелёк — это виртуальный счёт, который можно пополнять, оплачивать с него различные товары и услуги и переводить c кошелька на карту и обратно.",
+      services: {
+        detail: {
+          text: "Подробнее",
+          icon: "fa-solid fa-arrow-right ml-3",
+        },
+        autoPay: {
+          title: "Услуга «Автоплатеж»",
+          subtitle:
+            "Для удобства наших пользователей реализованы 2 вида автоплатежей:",
+          descr:
+            "Уникальная услуга «Автоплатеж» от компании DPAY — это возможность оставаться на связи, либо оплачивать иные услуги партнеров системы в автоматическом режиме.",
+          types: ["По расписанию", "По событию"],
+          first: {
+            title: "Автоплатеж по расписанию",
+            text: "Данный автоплатеж позволяет совершать периодические платежи за любые услуги на ежемесячной или еженедельной основе. В рамках данной возможности реализованы следующие варианты:",
+            types: [
+              "Ежемесячно в последний день",
+              "Ежемесячно в указанный день",
+              "Еженедельно.",
+            ],
+            activate: {
+              title: "Активация услуги:",
+              content:
+                "Для создания автоплатежа по расписанию выберите раздел «Оплата». Далее выберите необходимую услугу и другие параметры платежа. При вводе суммы платежа система DPAY предложит создать автоплатеж. Выберите необходимый график платежа и подтвердите автоплатеж.",
+            },
+          },
+          second: {
+            title: "Автоплатеж по событию",
+            descr:
+              "Данный автоплатеж позволяет автоматически пополнять основной баланс Вашего телефонного номера при достижении определенного порога на указанную сумму. Услуга на текущий момент доступна для абонентов UMS, Beeline, Ucell и UzMobile. Сумма пополнения может быть: 5000, 10 000, 15 000, 20 000 и 50 000 сум.",
+            activate: {
+              title: "Активация услуги:",
+              types: [
+                "Выберите пункт «Автоплатеж»",
+                "Далее, выберите подменю «Создать», укажите номер и установите нужную сумму.",
+                "По факту подключения услуги вы получите оповещение в виде SMS-сообщения.",
+              ],
+              content:
+                "В меню «Автоплатеж» вы также можете получить подробную информацию об услуге, настроить список номеров для автопополнения, просмотреть/удалить список номеров для автопополнения.",
+            },
+          },
+        },
+        eventPay: {
+          title: "Оплата на местах",
+          subtitle: "Изменение порядка оплаты на местах",
+          descr:
+            "Согласно ПП №5252 от 04.10.2021 г. и ПКМ № 943 от 23.11.2019 г. оплаты, проведенные дистанционным образом, должны быть фискализированы и по ним должен быть предоставлен электронный чек с QR-кодом.",
+          descr2:
+            "С 1 марта 2023 года пользователи могут оплачивать свои покупки через кассовые аппараты, с помощью приложения Dpay.",
+          activate: {
+            title: "Для этого пользователю необходимо:",
+            types: [
+              "Сообщить кассиру в точке оплаты, что он желает оплатить покупки через Dpay.",
+              "Нажать в приложении Dpay кнопку ///.",
+              "Продемонстрировать отображенный на экране телефона QR-код, для сканирования и оплаты.",
+              "Готово! После сканирования, на экране отобразится уведомление об успешном платеже.",
+            ],
+            warn: "Внимание! При оплате данным способом, пользователь получает кешбэк как от Dpay, так и от приложения SoliqUz без сканирования чека.",
+          },
+        },
+        myInvoice: {
+          title: "Услуга «Мои квитанции»",
+          descr:
+            "Возможность оплаты коммунальных услуг существует в DPAY давно. Но в некоторых ситуациях могут пригодиться фактические квитанции об успешных оплатах.",
+          descr2:
+            "Специально для таких случаев в системе DPAY появилась возможность скачать электронную версию квитанции или заказать бумажную версию с доставкой по почте в любую точку Узбекистана.",
+          typesTitle:
+            "Квитанции предоставляются по совершенным оплатам коммунальных услуг и некоторых других сервисов:",
+          types: [
+            "Газ",
+            "Холодная вода",
+            "Электроэнергия",
+            "Вывоз мусора",
+            "Горячая вода и отопление",
+            "Штрафы ГУБДД",
+          ],
+        },
+        transfer: {
+          title: "Перевод с карты на карту",
+          descr:
+            "В системе DPAY можно переводить денежные средства непосредственно с одной пластиковой карты на другую, эмитированные банками Узбекистана.",
+          descr2:
+            "Для удобства пользователей DPAY перевод средств между картами можно осуществить по номеру пластиковой карты получателя, либо по номеру его телефона. При переводе по номеру телефона, получение средств будет возможно после регистрации данного номера в системе DPAY, если таковое не было сделано ранее.",
+          types: [
+            "Перевод по номеру сотового телефона",
+            "Перевод по номеру банковской карты",
+            "Перевод между своими банковскими картами",
+            "Запрос средств по номеру у другого пользователя",
+          ],
+        },
+      },
+    },
+
     navLinks: [
       {
         text: "Услуги",
@@ -263,7 +361,131 @@ export const resource = {
       "Круглосуточная горячая линия: +998 (71) 200-95-00, +998 (71) 200-89-00",
     ],
   },
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+  //
   uz: {
+    additional: {
+      title: "Dpay Hamyon nima?",
+      subtitle:
+        "Dpay -Hamyon — bu virtual hisob bo'lib, uni to'ldirish mumkin, undan turli xizmatlarga va xaridlarga to'lasa va pul o'tkazmalarini amalga oshirsa bo'ladi.",
+      descr:
+        "DPAY to‘lov tizimi yangi narsalarni sinab ko‘rmoqchi bo‘lganlar uchun universal yechim – elektron hamyonni taklif etadi. Oddiy qilib aytganda, DPAY hamyoni virtual hisob bo'lib, uni to'ldirish, undan turli xil tovarlar va xizmatlar uchun to'lash, hamyondan kartaga va aksincha o'tkazish mumkin.",
+      services: {
+        detail: {
+          text: "Batafsil",
+          icon: "fa-solid fa-arrow-right ml-3",
+        },
+        autoPay: {
+          title: `"Avtoto'lov" xizmati`,
+          subtitle:
+            "Foydalanuvchilarimizga qulaylik yaratish maqsadida 2 turdagi avtoto'lovlar amalga oshiriladi:",
+          descr:
+            "DPAY’dan noyob “Avtoto‘lov” xizmati avtomatik rejimda aloqada bo‘lish yoki tizim hamkorlarining boshqa xizmatlari uchun haq to‘lash imkoniyatidir",
+          types: ["Rejalashtirilgan", "Voqea bo'yicha"],
+          first: {
+            title: "Rejalashtirilgan avtomatik to'lov",
+            text: "Ushbu avtomatik to'lov har qanday xizmat uchun oylik yoki haftalik ravishda takroriy to'lovlarni amalga oshirish imkonini beradi. Ushbu parametr quyidagi variantlarni taqdim etadi:",
+            types: [
+              "Har oy oxirgi kuni",
+              "Belgilangan sanada har oy",
+              "Haftalik",
+            ],
+            activate: {
+              title: "Xizmatni faollashtirish:",
+              content: `Jadvalga muvofiq avtomatik to'lovni yaratish uchun "To'lov" bo'limini tanlang. Keyinchalik, kerakli xizmatni va boshqa to'lov variantlarini tanlang. To'lov miqdorini kiritishda DPAY tizimi avtomatik to'lovni yaratishni taklif qiladi. Kerakli to'lov jadvalini tanlang va avtomatik to'lovni tasdiqlang.`,
+            },
+          },
+          second: {
+            title: "Voqea bo'yicha avtomatik to'lov",
+            descr:
+              "Ushbu avtomatik to'lov belgilangan miqdor uchun ma'lum chegaraga erishilganda telefon raqamingizning asosiy balansini avtomatik ravishda to'ldirish imkonini beradi. Xizmat hozirda UMS, Beeline, Ucell va UzMobile abonentlari uchun amal qiladi. To'ldirish miqdori: 5000, 10 000, 15 000, 20 000 va 50 000 so'm bo'lishi mumkin.",
+            activate: {
+              title: "Xizmatni faollashtirish:",
+              types: [
+                `Tanlang paragraf "Avtomatik to'lov»`,
+                `Keyinchalik, "Yaratish" pastki menyusini tanlang, raqamni belgilang va kerakli miqdorni belgilang`,
+                "Xizmatga ulangandan so'ng siz SMS-xabar shaklida bildirishnoma olasiz",
+              ],
+              content:
+                "Shuningdek, “Avtoto‘lov” menyusida siz xizmat haqida batafsil ma’lumot olishingiz, avtomatik to‘ldirish uchun raqamlar ro‘yxatini sozlashingiz, avtomatik to‘ldirish uchun raqamlar ro‘yxatini ko‘rishingiz/o‘chirishingiz mumkin.",
+            },
+          },
+        },
+        eventPay: {
+          title: "Joyida to'lash",
+          subtitle: "Joylarda to’lov tartibida o’zgarishlar haqida",
+          descr:
+            "04.10.2021-yilning PQ 5252, hamda Vazirlar Mahkamasining 23.11.2019 yildagi №943 qaroriga binoan, masofadan amalga oshiriluvchi to’lovlar fiskallashtirilishi va ular bo’yicha QR-kodga ega elektron chek taqdim etilishi lozim.",
+          descr2:
+            "2023-yilning 1-mart kunidan boshlab foydalanuvchilar to’lovlarni kassa apparatlari orqali Dpay ilovasi yordamida amalga oshirish imkoniyatiga ega bo’ladilar.",
+          activate: {
+            title: "Buning uchun:",
+            types: [
+              "To’lov nuqtasida sotuvchi-kassirga Dpay orqali to’lamoqchi ekanligingizni ayting",
+              "Dpay ilovasida /// tugmasini bosing",
+              "Skanerlash va to’lash uchun telefon ekranida paydo bo’lgan QR-kodni kassirga ko’rsating",
+              "Tayyor! Skanerlash yakunlangandan so’ng, ekranda muvaffaqiyatli to’lov haqida xabar paydo bo’ladi",
+            ],
+            warn: "Diqqat! Ushbu to’lov usulidan foydalanganda,  foydalanuvchi chekni skanerlamagan holda ham “Dpay”dan, ham “SoliqUz” ilovasidan cashback oladi",
+          },
+        },
+        myInvoice: {
+          title: '"Kvitantsiyalarim" xizmati',
+          descr:
+            "Kommunal xizmatlarga to'lash imkoni DPAY tizimida beri joriy qilingan. Ba'zi holatlarda ushbu to'lovlar bo'yicha kvitantsiyalar foydali bo’lishi mumkin.",
+          descr2:
+            "Aynan shunday vaziyatlar uchun DPAY tizimida kvitantsiyaning elektron shaklini yuklab olish yoki butun O'zbekiston bo'ylab istalgan hududga pochta orqali eltib beriladigan qog'oz shakliga buyurtma berish imkoni ishga tushirildi.",
+          typesTitle:
+            "Kvitantsiyalar kommunal va ba'zi boshqa xizmatlarga oshirilgan to'lovlar bo'yicha taqdim qilinadi:",
+          types: [
+            "Gaz",
+            "Sovuq suv",
+            "Elektroenergiya",
+            "Chiqindilarini olib chiqish",
+            "Issiq suv va isitish",
+            "DYHXX jarimalari",
+          ],
+        },
+        transfer: {
+          title: "Kartadan kartaga o'tkazish",
+          descr:
+            "DPAY tizimida Oʻzbekiston banklari tomonidan chiqarilgan bir plastik kartadan boshqasiga toʻgʻridan-toʻgʻri pul oʻtkazishingiz mumkin.",
+          descr2:
+            "DPAY foydalanuvchilariga qulaylik yaratish maqsadida pul mablag‘larini oluvchining plastik karta raqami yoki uning telefon raqamidan foydalangan holda kartalar o‘rtasida o‘tkazish mumkin. Telefon raqami orqali pul o'tkazishda, agar bu ilgari amalga oshirilmagan bo'lsa, ushbu raqamni DPAY tizimida ro'yxatdan o'tkazgandan so'ng pul mablag'larini olish mumkin bo'ladi.",
+          types: [
+            "Mobil telefon raqami orqali o'tkazish",
+            "Bank kartasi raqami bo'yicha o'tkazma",
+            "Bank kartalaringiz o'rtasida o'tkazma",
+            "Boshqa foydalanuvchidan raqam bo'yicha pul so'rash",
+          ],
+        },
+      },
+    },
+
     navLinks: [
       { text: "Xizmatlar", link: "Services" },
       { text: "Yordam", link: "Help" },

@@ -139,7 +139,7 @@ const switchLang = (l) => {
                 : resource.uz.navLinks"
             >
               <RouterLink
-                @click="hideMenu"
+                @click="hideMenu, blockScroll(false)"
                 class="semimd:text-3xl text-2xl p-1 border-b-4 border-sky-400 rounded-r-xl h-11"
                 :to="'/' + s.link"
               >

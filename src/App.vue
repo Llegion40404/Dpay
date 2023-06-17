@@ -140,7 +140,6 @@ const switchLang = (l) => {
             >
               <p
                 class="md:text-3xl sm:text-2xl text-lg p-1 border-b-4 border-sky-400 rounded-r-xl h-11"
-                :to="'/' + s"
               >
                 {{ s }}
               </p>

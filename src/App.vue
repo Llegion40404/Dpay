@@ -210,7 +210,15 @@ const switchLang = (l) => {
                   ? resource.ru.documents.services
                   : resource.uz.documents.services"
               >
-                <a :href="'/Services#' + item.link"> {{ item?.text }}</a>
+                <a
+                  :href="
+                    item.link.includes('https')
+                      ? item.link
+                      : '/Services#' + item.link
+                  "
+                >
+                  {{ item?.text }}</a
+                >
               </li>
             </ul>
           </div>

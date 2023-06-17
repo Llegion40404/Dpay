@@ -103,6 +103,7 @@ export const resource = {
         { text: "Оплата на местах", link: "place" },
         { text: "Услуга «Мои квитанции»", link: "invoice" },
         { text: "Перевод с карты на карту", link: "card" },
+        { text: "Телеграм-бот", link: "https://t.me/dpaybot" },
       ],
       help: [
         {
@@ -506,7 +507,7 @@ export const resource = {
         { text: "Joyida to'lash", link: "place" },
         { text: '"Kvitantsiyalarim" xizmati', link: "invoice" },
         { text: "Kartadan kartaga o'tkazish", link: "card" },
-        { text: "Telegram-bot" },
+        { text: "Telegram-bot", link: "https://t.me/dpaybot" },
       ],
       help: [
         {

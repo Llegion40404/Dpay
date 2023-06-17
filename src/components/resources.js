@@ -97,21 +97,36 @@ export const resource = {
         },
       },
     },
-
-    navLinks: [
-      {
-        text: "Услуги",
-        link: "Services",
-      },
-      {
-        text: "Помощь",
-        link: "Help",
-      },
-      {
-        text: "FAQs",
-        link: "FAQs",
-      },
-    ],
+    documents: {
+      services: [
+        { text: "Услуга «Автоплатеж»", link: "auto" },
+        { text: "Оплата на местах", link: "place" },
+        { text: "Услуга «Мои квитанции»", link: "invoice" },
+        { text: "Перевод с карты на карту", link: "card" },
+      ],
+      help: [
+        {
+          text: "Взаимодействие с оператором",
+          link: "./Files/Payment_with_client.pdf",
+        },
+        { text: "Инфо о управлении рисками", link: ".pdf" },
+        { text: "Инфо о системе контроля", link: "./Files/system_control.pdf" },
+        { text: "Инфо-Безопасность", link: "./Files/info_security.pdf" },
+        {
+          text: "Политика конфиденциальности",
+          link: "./Files/Policy_privacy.pdf",
+        },
+        { text: "Преступная деятельность", link: "./Files/Jinoiy.pdf" },
+        { text: "Публичная оферта", link: "./Files/public_offer.pdf" },
+      ],
+      about: [
+        { text: "Что такое Dpay", link: "/Services" },
+        { text: "Описание и возможности системы", link: "#more" },
+        { text: "Тарифы", link: "#rate" },
+        { text: "Вакансии", link: "#jobs" },
+      ],
+    },
+    navLinks: ["Услуги", "Помощь", "О сервисе"],
     mainTitle:
       "Dpay - это платежная система и мобильный банкинг в Узбекистане, быстрая оплата через мобильное приложение с использованием пластиковой карты UZCARD и HUMO.",
     descr: "Описание и возможности системы",
@@ -485,15 +500,37 @@ export const resource = {
         },
       },
     },
-
-    navLinks: [
-      { text: "Xizmatlar", link: "Services" },
-      { text: "Yordam", link: "Help" },
-      {
-        text: "FAQs",
-        link: "FAQs",
-      },
-    ],
+    documents: {
+      services: [
+        { text: `"Avtoto'lov" xizmati`, link: "auto" },
+        { text: "Joyida to'lash", link: "place" },
+        { text: '"Kvitantsiyalarim" xizmati', link: "invoice" },
+        { text: "Kartadan kartaga o'tkazish", link: "card" },
+        { text: "Telegram-bot" },
+      ],
+      help: [
+        {
+          text: "Operator bilan suzbat qoidalari",
+          link: "./Files/Payment_with_client.pdf",
+        },
+        { text: "Tizim ma'lumotlari", link: "./Files/risks_control.pdf" },
+        {
+          text: "Boshqaruv tizimi ma'lumotlari",
+          link: "./Files/system_control.pdf",
+        },
+        { text: "Info-Havsizlik", link: "./Files/info_security.pdf" },
+        { text: "Maxfiylik siyosati", link: "./Files/policy_privacy.pdf" },
+        { text: "Ommaviy oferta", link: "./Files/Ommaviy_oferta.pdf" },
+        { text: "jinoiy faoliyat", link: "./Files/Jinoiy.pdf" },
+      ],
+      about: [
+        { text: "Dpay nima", link: "/Services" },
+        { text: "Tizimning tavsifi va imkoniyatlari", link: "#more" },
+        { text: "Tariflar", link: "#rate" },
+        { text: "Vakansiyalar", link: "#jobs" },
+      ],
+    },
+    navLinks: ["Xizmatlar", "Yordam", "FAQs"],
     mainTitle:
       "Dpay bu – O‘zbekistonda to‘lov tizimi va mobil banking, UZCARD va HUMO plastik kartalaridan foydalangan holda mobil ilova orqali tezkor to‘lov.",
     descr: "Tizimning tavsifi va imkoniyatlari",

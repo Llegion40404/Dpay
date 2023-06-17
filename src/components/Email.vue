@@ -18,7 +18,7 @@ const showText = (idx) => {
 };
 </script>
 <template>
-  <section class="dark:text-white py-12">
+  <section class="dark:text-white pt-12">
     <div class="container flex flex-col md:px-3">
       <section
         class="flex phone:w-full justify-between phone:flex-col md:flex-row"

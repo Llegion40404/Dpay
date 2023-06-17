@@ -1,40 +1,60 @@
 <script setup>
 import ServBtn from "@/components/ServBtn.vue";
-
+import router from "@/router";
+import { onMounted } from "vue";
+import { ref } from "vue";
 const props = defineProps({
   data: {
     type: Array,
     required: true,
   },
 });
+const auto = ref(null);
+const place = ref(null);
+const invoice = ref(null);
+const card = ref(null);
+onMounted(() => {
+  let id = router.currentRoute.value.fullPath.slice(10);
+  if (id.length > 1)
+    eval(`${id}.value.scrollIntoView({ behavior: "smooth",block:'center' });`);
+});
 </script>
 <template>
   <section class="container px-3 pt-32 dark:text-white text-center">
     <div>
-      <h1 class="text-2xl font-semibold">{{ data.additional.title }}</h1>
-      <p class="mb-10 mt-3">{{ data.additional.subtitle }}</p>
-      <p class="font-medium dark:text-slate-200">
+      <h1 class="text-2xl sm2:text-3xl font-semibold">
+        {{ data.additional.title }}
+      </h1>
+      <p class="mb-10 mt-3 sm2:text-lg">{{ data.additional.subtitle }}</p>
+      <p class="font-medium dark:text-slate-200 sm2:text-lg">
         {{ data.additional.descr }}
       </p>
     </div>
-    <main class="pt-20">
+    <main class="pt-20 semibig:text-left">
       <div>
-        <article>
-          <h2 class="text-2xl text-indigo-400">
+        <article ref="auto" id="auto" class="sm2:text-lg semibig:text-xl">
+          <h2 class="text-2xl text-indigo-400 sm2:text-3xl">
             {{ data.additional.services.autoPay.title }}
           </h2>
-          <p class="mt-2 mb-5">
+          <p class="mt-2 mb-5 sm2:text-lg sm2:mb-1">
             {{ data.additional.services.autoPay.descr }}
           </p>
-          <p class="text-sm mb-5 dark:text-slate-300">
+          <p class="text-sm sm2:text-lg mb-5 dark:text-slate-300">
             {{ data.additional.services.autoPay.subtitle }}
           </p>
-          <p v-for="t in data.additional.services.autoPay.types">{{ t }}</p>
-          <div class="text-left py-10">
-            <h2 class="text-xl mb-3">
+          <ul class="list-disc px-5">
+            <li
+              class="text-left sm2:text-lg"
+              v-for="t in data.additional.services.autoPay.types"
+            >
+              {{ t }}
+            </li>
+          </ul>
+          <div class="text-left sm2:text-lg py-10">
+            <h2 class="text-xl sm2:text-2xl mb-3 text-indigo-400">
               {{ data.additional.services.autoPay.first.title }}
             </h2>
-            <p class="text-gray-300">
+            <p class="dark:text-gray-300 text-black">
               {{ data.additional.services.autoPay.first.text }}
             </p>
             <ul class="list-disc px-5 py-5">
@@ -45,17 +65,17 @@ const props = defineProps({
             <h3 class="text-indigo-400">
               {{ data.additional.services.autoPay.first.activate.title }}
             </h3>
-            <p class="py-3 text-gray-300">
+            <p class="py-3 dark:text-gray-300 text-black">
               {{ data.additional.services.autoPay.first.activate.content }}
             </p>
           </div>
         </article>
-        <article class="pb-10">
-          <div>
-            <h2 class="text-xl mb-3">
+        <article class="pb-10 sm2:text-lg">
+          <div class="text-left">
+            <h2 class="text-xl sm2:text-2xl text-indigo-400 mb-3">
               {{ data.additional.services.autoPay.second.title }}
             </h2>
-            <p class="text-gray-300">
+            <p class="dark:text-gray-300 text-black">
               {{ data.additional.services.autoPay.second.descr }}
             </p>
             <p class="my-3 text-indigo-400">
@@ -70,7 +90,7 @@ const props = defineProps({
                 {{ idx + 1 }}. {{ t }}
               </li>
             </ul>
-            <p class="text-gray-400">
+            <p class="dark:text-gray-400 text-black">
               {{ data.additional.services.autoPay.second.activate.content }}
             </p>
           </div>
@@ -79,8 +99,8 @@ const props = defineProps({
             :icon="data.additional.services.detail.icon"
           />
         </article>
-        <article class="pb-10 pt-20">
-          <h2 class="text-2xl text-indigo-400">
+        <article ref="place" id="place" class="pb-10 pt-20 sm2:text-lg">
+          <h2 class="text-xl sm2:text-3xl text-indigo-400">
             {{ data.additional.services.eventPay.title }}
           </h2>
           <p>{{ data.additional.services.eventPay.subtitle }}</p>
@@ -96,7 +116,7 @@ const props = defineProps({
                 v-for="(t, idx) in data.additional.services.eventPay.activate
                   .types"
               >
-                {{ idx + 1 }}.{{ t }}
+                {{ idx + 1 }}. {{ t }}
               </li>
             </ul>
             <p class="text-red-700 font-medium">
@@ -108,31 +128,35 @@ const props = defineProps({
             :icon="data.additional.services.detail.icon"
           />
         </article>
-        <article>
-          <h2 class="text-2xl text-indigo-400 pt-20">
+        <article ref="invoice" id="invoice" class="sm2:text-lg pb-20">
+          <h2 class="text-2xl sm2:text-3xl text-indigo-400 pt-20">
             {{ data.additional.services.myInvoice.title }}
           </h2>
           <p class="my-3">{{ data.additional.services.myInvoice.descr }}</p>
           <p>{{ data.additional.services.myInvoice.descr2 }}</p>
           <div class="text-left py-5">
-            <h4 class="text-gray-300">
+            <h4 class="dark:text-gray-300 text-black">
               {{ data.additional.services.myInvoice.typesTitle }}
             </h4>
-            <ul class="my-5">
+            <ul>
               <li v-for="(t, idx) in data.additional.services.myInvoice.types">
-                {{ idx + 1 }}.{{ t }}
+                {{ idx + 1 }}. {{ t }}
               </li>
             </ul>
           </div>
+          <ServBtn
+            :text="data.additional.services.detail.text"
+            :icon="data.additional.services.detail.icon"
+          />
         </article>
-        <article class="pb-5 pt-20">
-          <h2 class="text-2xl text-indigo-400">
+        <article ref="card" id="card" class="py-20 sm2:text-lg">
+          <h2 class="text-2xl sm2:text-3xl text-indigo-400 sm2:tetxt-3xl">
             {{ data.additional.services.transfer.title }}
           </h2>
-          <p class="my-3 text-gray-300">
+          <p class="my-3 dark:text-gray-300 text-black">
             {{ data.additional.services.transfer.descr }}
           </p>
-          <p class="text-gray-300">
+          <p class="dark:text-gray-300 text-black">
             {{ data.additional.services.transfer.descr2 }}
           </p>
           <ul class="text-left pt-10">
@@ -140,7 +164,7 @@ const props = defineProps({
               class="mb-2"
               v-for="(t, idx) in data.additional.services.transfer.types"
             >
-              {{ idx + 1 }}.{{ t }}
+              {{ idx + 1 }}. {{ t }}
             </li>
           </ul>
           <ServBtn

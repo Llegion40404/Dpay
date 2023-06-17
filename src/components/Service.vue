@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
   <section>
     <div class="container px-3 py-20">
-      <div>
+      <div id="rate">
         <article>
           <h1
             class="text-2xl dark:text-white text-indigo-500 poco:text-3xl mb-10 font-semibold text-center poco2:text-left"

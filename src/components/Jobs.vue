@@ -7,7 +7,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <section class="dark:bg-[rgb(31,28,45)] bg-gray-500 py-20 mt-20">
+  <section id="jobs" class="dark:bg-[rgb(31,28,45)] bg-gray-500 py-20 mt-20">
     <div class="container px-3 md:px-5 dark:text-white">
       <h1
         class="phone:text-3xl sm:text-center poco2:text-4xl lg:text-5xl mb-5 poco2:mb-10"

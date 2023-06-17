@@ -1,9 +1,9 @@
 <script setup>
-import { RouterView } from "vue-router";
-import { ref } from "vue";
-import { RouterLink } from "vue-router";
+import { provide, ref } from "vue";
+import { RouterView, RouterLink } from "vue-router";
 import { resource } from "@/components/resources";
 
+let id = ref("");
 let lang = ref(localStorage.getItem("lang") || "ru");
 let theme = localStorage.getItem("theme") || false;
 let isLight = theme ? ref(false) : ref(true);
@@ -36,7 +36,7 @@ const switchLang = (l) => {
   <section class="wraper">
     <nav
       id="top"
-      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(34,28,61)] dark:text-white top-0 right-0 left-0"
+      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(13,11,22)] dark:text-white top-0 right-0 left-0"
     >
       <div
         class="container semimd:px-0 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
@@ -138,13 +138,12 @@ const switchLang = (l) => {
                 ? resource.ru.navLinks
                 : resource.uz.navLinks"
             >
-              <RouterLink
-                @click="hideMenu(), blockScroll(false)"
-                class="semimd:text-3xl text-2xl p-1 border-b-4 border-sky-400 rounded-r-xl h-11"
-                :to="'/' + s.link"
+              <p
+                class="md:text-3xl sm:text-2xl text-lg p-1 border-b-4 border-sky-400 rounded-r-xl h-11"
+                :to="'/' + s"
               >
-                {{ s.text }}
-              </RouterLink>
+                {{ s }}
+              </p>
             </li>
           </ul>
 
@@ -192,27 +191,110 @@ const switchLang = (l) => {
     </nav>
     <RouterView :data="lang == 'ru' ? resource.ru : resource.uz" />
     <footer class="border-t text-white border-gray-300 dark:border-gray-700">
-      <div class="container flex px-2 md:px-5 py-5">
-        <div class="w-full">
+      <div
+        class="container flex flex-row-reverse justify-between px-2 md:px-5 py-5"
+      >
+        <div class="hidden semimd:flex justify-between gap-10">
+          <div class="flex flex-col">
+            <h4
+              class="md:text-3xl text-black dark:text-white max-w-min sm:text-2xl text-lg p-1 border-b-4 border-indigo-400 rounded-r-xl h-11"
+            >
+              {{
+                lang == "ru" ? resource.ru.navLinks[0] : resource.uz.navLinks[0]
+              }}
+            </h4>
+            <ul class="pt-3">
+              <li
+                class="mb-3 dark:text-white text-black text-lg"
+                v-for="item in lang == 'ru'
+                  ? resource.ru.documents.services
+                  : resource.uz.documents.services"
+              >
+                <a :href="'/Services#' + item.link"> {{ item?.text }}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col">
+            <h4
+              class="md:text-3xl text-black dark:text-white max-w-min sm:text-2xl text-lg p-1 border-b-4 border-indigo-400 rounded-r-xl h-11"
+            >
+              {{
+                lang == "ru" ? resource.ru.navLinks[1] : resource.uz.navLinks[1]
+              }}
+            </h4>
+            <ul class="pt-3">
+              <li
+                class="mb-3 dark:text-white text-black text-lg"
+                v-for="item in lang == 'ru'
+                  ? resource.ru.documents.help
+                  : resource.uz.documents.help"
+              >
+                <a :href="item.link" download>{{ item?.text }}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col">
+            <h4
+              class="md:text-3xl text-black dark:text-white max-w-max sm:text-2xl text-lg p-1 border-b-4 border-indigo-400 rounded-r-xl h-11"
+            >
+              {{
+                lang == "ru" ? resource.ru.navLinks[2] : resource.uz.navLinks[2]
+              }}
+            </h4>
+            <ul class="pt-3">
+              <li
+                class="mb-3 dark:text-white text-black text-lg"
+                v-for="item in lang == 'ru'
+                  ? resource.ru.documents.about
+                  : resource.uz.documents.about"
+              >
+                <a :href="item.link">{{ item?.text }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="min-w-fit self-end">
+          <a
+            class="text-white bg-black semimd:h-auto dark:bg-slate-500 md:h-12 dark:text-black flex px-4 py-2 rounded-lg"
+            href="https://apple.com"
+          >
+            <i class="fa-brands fa-apple fa-2x mr-3"></i>
+            <div>
+              <p class="text-[10px] dark:font-bold tracking-wide leading-3">
+                Download on the
+              </p>
+              <h4 class="tracking-wide font-semibold md:text-sm semimd:text-lg">
+                App Store
+              </h4>
+            </div>
+          </a>
+          <a
+            class="text-white my-5 bg-black semimd:h-auto dark:bg-slate-500 md:h-12 dark:text-black flex px-4 py-2 rounded-lg"
+            href="https://play.google.com"
+          >
+            <img
+              class="h-9 mr-3"
+              width="30"
+              src="./img/playstore.jpg"
+              alt="play store icon"
+            />
+            <div class="text-left">
+              <p class="font-light dark:font-bold text-[11px] leading-3">
+                GET IT ON
+              </p>
+              <h4 class="font-semibold md:text-sm semimd:text-lg">
+                Google Play
+              </h4>
+            </div>
+          </a>
           <p
             v-for="contact in lang == 'ru'
               ? resource?.ru?.contacts
               : resource?.uz?.contacts"
-            class="font-semibold text-sm text-gray-500 dark:text-gray-500"
+            class="font-semibold my-1 text-sm text-gray-500 dark:text-gray-500"
           >
             {{ contact }}
           </p>
-        </div>
-        <div class="md2:flex justify-end w-full hidden">
-          <RouterLink
-            class="semimd:text-3xl text-2xl mx-10 p-1 dark:text-white text-black border-b-4 border-sky-400 rounded-r-xl h-11"
-            v-for="s in lang == 'ru'
-              ? resource?.ru?.navLinks
-              : resource?.uz?.navLinks"
-            :to="'/' + s.link"
-          >
-            {{ s.text }}
-          </RouterLink>
         </div>
       </div>
     </footer>

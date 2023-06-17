@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MainVue from "@/views/Main.vue";
-import DevVue from "@/views/Dev.vue";
 
 const routes = [
   {
@@ -9,19 +8,9 @@ const routes = [
     component: MainVue,
   },
   {
-    path: "/wp",
-    name: "wp",
-    component: DevVue,
-  },
-  {
-    path: "/FAQs",
-    name: "FAQs",
-    component: () => import("@/views/FAQs.vue"),
-  },
-  {
-    path: "/help",
-    name: "Help",
-    component: () => import("@/views/Help.vue"),
+    path: "/:cathcAll(.*)",
+    name: "404",
+    component: () => import("@/views/Error404.vue"),
   },
   {
     path: "/Services",

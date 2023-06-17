@@ -1,5 +1,5 @@
 <script setup>
-import { provide, ref } from "vue";
+import { ref } from "vue";
 import { RouterView, RouterLink } from "vue-router";
 import { resource } from "@/components/resources";
 

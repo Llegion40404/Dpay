@@ -99,10 +99,10 @@ export const resource = {
     },
     documents: {
       services: [
-        { text: "Услуга «Автоплатеж»", link: "auto" },
-        { text: "Оплата на местах", link: "place" },
-        { text: "Услуга «Мои квитанции»", link: "invoice" },
-        { text: "Перевод с карты на карту", link: "card" },
+        { text: "Услуга «Автоплатеж»", link: "#auto" },
+        { text: "Оплата на местах", link: "#place" },
+        { text: "Услуга «Мои квитанции»", link: "#invoice" },
+        { text: "Перевод с карты на карту", link: "#card" },
         { text: "Телеграм-бот", link: "https://t.me/dpaybot" },
       ],
       help: [
@@ -121,7 +121,7 @@ export const resource = {
         { text: "Публичная оферта", link: "./Files/public_offer.pdf" },
       ],
       about: [
-        { text: "Что такое Dpay", link: "/Services" },
+        { text: "Что такое Dpay", link: "Services", hash: "#top" },
         { text: "Описание и возможности системы", link: "#more" },
         { text: "Тарифы", link: "#rate" },
         { text: "Вакансии", link: "#jobs" },
@@ -503,10 +503,10 @@ export const resource = {
     },
     documents: {
       services: [
-        { text: `"Avtoto'lov" xizmati`, link: "auto" },
-        { text: "Joyida to'lash", link: "place" },
-        { text: '"Kvitantsiyalarim" xizmati', link: "invoice" },
-        { text: "Kartadan kartaga o'tkazish", link: "card" },
+        { text: `"Avtoto'lov" xizmati`, link: "#auto" },
+        { text: "Joyida to'lash", link: "#place" },
+        { text: '"Kvitantsiyalarim" xizmati', link: "#invoice" },
+        { text: "Kartadan kartaga o'tkazish", link: "#card" },
         { text: "Telegram-bot", link: "https://t.me/dpaybot" },
       ],
       help: [
@@ -525,8 +525,11 @@ export const resource = {
         { text: "jinoiy faoliyat", link: "./Files/Jinoiy.pdf" },
       ],
       about: [
-        { text: "Dpay nima", link: "/Services" },
-        { text: "Tizimning tavsifi va imkoniyatlari", link: "#more" },
+        { text: "Dpay nima", link: "Services", hash: "#top" },
+        {
+          text: "Tizimning tavsifi va imkoniyatlari",
+          link: "#more",
+        },
         { text: "Tariflar", link: "#rate" },
         { text: "Vakansiyalar", link: "#jobs" },
       ],

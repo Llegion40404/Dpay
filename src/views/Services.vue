@@ -1,28 +1,16 @@
 <script setup>
 import ServBtn from "@/components/ServBtn.vue";
-import router from "@/router";
-import { onMounted } from "vue";
-import { ref } from "vue";
 const props = defineProps({
   data: {
     type: Array,
     required: true,
   },
 });
-const auto = ref(null);
-const place = ref(null);
-const invoice = ref(null);
-const card = ref(null);
-onMounted(() => {
-  let id = router.currentRoute.value.fullPath.slice(10);
-  if (id.length > 1)
-    eval(`${id}.value.scrollIntoView({ behavior: "smooth",block:'center' });`);
-});
 </script>
 <template>
   <section class="container px-3 pt-32 dark:text-white text-center">
     <div>
-      <h1 class="text-2xl sm2:text-3xl font-semibold">
+      <h1 class="text-2xl sm2:text-3xl md2:text-4xl font-semibold">
         {{ data.additional.title }}
       </h1>
       <p class="mb-10 mt-3 sm2:text-lg">{{ data.additional.subtitle }}</p>
@@ -32,8 +20,8 @@ onMounted(() => {
     </div>
     <main class="pt-20 semibig:text-left">
       <div>
-        <article ref="auto" id="auto" class="sm2:text-lg semibig:text-xl">
-          <h2 class="text-2xl text-indigo-400 sm2:text-3xl">
+        <article id="auto" class="sm2:text-lg semibig:text-xl">
+          <h2 class="text-2xl text-indigo-400 sm2:text-3xl md2:text-4xl">
             {{ data.additional.services.autoPay.title }}
           </h2>
           <p class="mt-2 mb-5 sm2:text-lg sm2:mb-1">
@@ -99,8 +87,8 @@ onMounted(() => {
             :icon="data.additional.services.detail.icon"
           />
         </article>
-        <article ref="place" id="place" class="pb-10 pt-20 sm2:text-lg">
-          <h2 class="text-xl sm2:text-3xl text-indigo-400">
+        <article id="place" class="pb-10 pt-20 sm2:text-lg">
+          <h2 class="text-2xl sm2:text-3xl md2:text-4xl text-indigo-400">
             {{ data.additional.services.eventPay.title }}
           </h2>
           <p>{{ data.additional.services.eventPay.subtitle }}</p>
@@ -128,8 +116,8 @@ onMounted(() => {
             :icon="data.additional.services.detail.icon"
           />
         </article>
-        <article ref="invoice" id="invoice" class="sm2:text-lg pb-20">
-          <h2 class="text-2xl sm2:text-3xl text-indigo-400 pt-20">
+        <article id="invoice" class="sm2:text-lg pb-20">
+          <h2 class="text-2xl sm2:text-3xl md2:text-4xl text-indigo-400 pt-20">
             {{ data.additional.services.myInvoice.title }}
           </h2>
           <p class="my-3">{{ data.additional.services.myInvoice.descr }}</p>
@@ -149,8 +137,10 @@ onMounted(() => {
             :icon="data.additional.services.detail.icon"
           />
         </article>
-        <article ref="card" id="card" class="py-20 sm2:text-lg">
-          <h2 class="text-2xl sm2:text-3xl text-indigo-400 sm2:tetxt-3xl">
+        <article id="card" class="py-20 sm2:text-lg">
+          <h2
+            class="text-2xl sm2:text-3xl md2:text-4xl text-indigo-400 sm2:tetxt-3xl"
+          >
             {{ data.additional.services.transfer.title }}
           </h2>
           <p class="my-3 dark:text-gray-300 text-black">

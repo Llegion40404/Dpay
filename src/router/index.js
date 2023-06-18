@@ -17,11 +17,25 @@ const routes = [
     name: "Services",
     component: () => import("@/views/Services.vue"),
   },
+  {
+    path: "/telegram",
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior(to, from, sPos) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+        top: 60,
+      };
+    }
+  },
 });
-
+router.beforeEach((to, from) => {
+  if (to.path == "/telegram") window.location.href = "https://t.me/dpaybot";
+});
 export default router;

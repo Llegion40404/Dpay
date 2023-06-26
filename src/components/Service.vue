@@ -12,7 +12,7 @@ const props = defineProps({
       <div id="rate">
         <article>
           <h1
-            class="text-2xl dark:text-white text-indigo-500 poco:text-3xl mb-10 font-semibold text-center poco2:text-left"
+            class="text-3xl dark:text-white text-[#604a8b] poco:text-4xl mb-10 text-center poco2:text-left"
           >
             {{ data.service.title }}
           </h1>

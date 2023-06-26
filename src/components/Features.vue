@@ -1,35 +1,26 @@
 <script setup>
-import { register } from "swiper/element/bundle";
 const props = defineProps({
   data: {
     type: Object,
     required: true,
   },
 });
-register();
 </script>
 <template>
   <section
     class="container py-20 poco:px-2 phone:px-2 md:px-5 phone:pb-0 semimd:pb-28"
   >
     <div id="more" class="px-2 flex justify-center">
-      <swiper-container
-        class="py-5"
-        :space-between="15"
-        :breakpoints="{
-          640: { slidesPerView: 4, loop: false },
-          900: { slidesPerView: 5 },
-          1100: { slidesPerView: 6 },
-        }"
-        :slides-per-view="2"
-        :loop="true"
+      <section
+        class="py-5 flex gap-3 big:overflow-hidden overflow-x-scroll overflow-y-hidden"
       >
-        <swiper-slide
-          class="border px-3 py-8 rounded-lg border-gray-400 border-opacity-30 hover:bg-white hover:bg-opacity-10 hover:-translate-y-3 transition duration-300"
+        <div
+          class="border min-w-[180px] max-w-[250px] max-h-32 bg-indigo-200 bg-opacity-90 flex items-center px-7 rounded-lg border-gray-400 border-opacity-30 hover:bg-white hover:bg-opacity-100 hover:-translate-y-3 transition duration-300"
           v-for="logo in data.logos"
-          ><img :src="logo" alt="logo"
-        /></swiper-slide>
-      </swiper-container>
+        >
+          <img :src="logo" alt="logo" />
+        </div>
+      </section>
     </div>
     <article class="flex pt-20 justify-around">
       <div class="w-7/12 phone:hidden semimd:block">
@@ -38,12 +29,10 @@ register();
       <article
         class="text-white w-3/5 semimd:text-left phone:text-center phone:w-full"
       >
-        <h4 class="font-bold text-2xl mb-8 dark:text-white text-indigo-500">
+        <h4 class="font-bold text-2xl mb-8 dark:text-white text-[#604a8b]">
           {{ data.descr }}
         </h4>
-        <p
-          class="opacity-80 text-slate-400 dark:opacity-80 font-bold dark:font-semibold text-lg mb-10"
-        >
+        <p class="dark:text-white text-[#212121] font-medium text-lg mb-10">
           {{ data.mainTitle }}
         </p>
         <div

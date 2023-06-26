@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
 const props = defineProps({
   data: {
     type: Object,
@@ -24,10 +23,10 @@ const showText = (idx) => {
         class="flex phone:w-full justify-between phone:flex-col md:flex-row"
       >
         <article
-          class="font-bold pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
+          class="font-bold px-3 pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
         >
           <h3
-            class="text-indigo-500 dark:text-white phone:text-xl poco:text-2xl md:text-3xl md:pr-40"
+            class="text-[#604a8b] dark:text-white phone:text-xl poco:text-2xl md:text-3xl md:pr-40"
           >
             {{ data.popularQuests }}
           </h3>

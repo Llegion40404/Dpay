@@ -38,7 +38,7 @@ const switchLang = (l) => {
       class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(13,11,22)] dark:text-white top-0 right-0 left-0"
     >
       <div
-        class="container semimd:px-0 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
+        class="container semimd:px-5 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
       >
         <div class="flex items-center gap-9">
           <RouterLink
@@ -143,14 +143,14 @@ const switchLang = (l) => {
                 }}
               </p>
               <div
-                class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0"
+                class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0 w-full"
               >
                 <ul
-                  class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-3"
+                  class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-5"
                 >
                   <li
                     @click="hideMenu(), blockScroll(false)"
-                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl"
+                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
                     v-for="item in lang == 'ru'
                       ? resource.ru.documents.services
                       : resource.uz.documents.services"
@@ -182,14 +182,14 @@ const switchLang = (l) => {
                 }}
               </p>
               <div
-                class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0"
+                class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0 w-full"
               >
                 <ul
-                  class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-3"
+                  class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-5"
                 >
                   <li
                     @click="hideMenu(), blockScroll(false)"
-                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl"
+                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
                     v-for="item in lang == 'ru'
                       ? resource.ru.documents.help
                       : resource.uz.documents.help"
@@ -210,14 +210,14 @@ const switchLang = (l) => {
                 }}
               </p>
               <div
-                class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0"
+                class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0 w-full"
               >
                 <ul
-                  class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-3"
+                  class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-5"
                 >
                   <li
                     @click="hideMenu(), blockScroll(false)"
-                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl"
+                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
                     v-for="item in lang == 'ru'
                       ? resource.ru.documents.about
                       : resource.uz.documents.about"
@@ -243,7 +243,7 @@ const switchLang = (l) => {
           </ul>
 
           <div
-            class="h-auto py-2 w-10/12 absolute bottom-4 sm2:hidden overflow-hidden duration-500 flex flex-col"
+            class="h-auto py-2 w-10/12 absolute bottom-10 sm2:hidden overflow-hidden duration-500 flex flex-col"
           >
             <div class="flex justify-center pb-5 semimd:hidden">
               <span
@@ -287,7 +287,7 @@ const switchLang = (l) => {
     <RouterView :data="lang == 'ru' ? resource.ru : resource.uz" />
     <footer class="border-t text-white border-gray-300 dark:border-gray-700">
       <div
-        class="container flex flex-row-reverse justify-between px-2 md:px-5 py-5"
+        class="container flex semimd:flex-col lg:flex-row-reverse gap-10 justify-between px-2 md:px-5 py-5"
       >
         <div class="hidden semimd:flex justify-between gap-10">
           <div class="flex flex-col">
@@ -335,7 +335,7 @@ const switchLang = (l) => {
                   ? resource.ru.documents.help
                   : resource.uz.documents.help"
               >
-                <a :href="item.link" download>{{ item?.text }}</a>
+                <a :href="item.link" target="_blank">{{ item?.text }}</a>
               </li>
             </ul>
           </div>
@@ -372,7 +372,7 @@ const switchLang = (l) => {
             </ul>
           </div>
         </div>
-        <div class="min-w-fit self-end">
+        <div class="min-w-fit self-start">
           <a
             class="text-white bg-black semimd:h-auto dark:bg-slate-500 md:h-12 dark:text-black flex px-4 py-2 rounded-lg"
             href="https://apple.com"

@@ -14,7 +14,7 @@ let carousel = ref(null);
 <template>
   <section class="py-20 phone:py-0 mt-40 md2:mt-52">
     <h1
-      class="text-indigo-600 dark:text-white font-bold text-xl poco:text-2xl text-center mb-20 poco:mb-10"
+      class="text-[#604a8b] dark:text-white font-bold text-xl poco:text-2xl text-center mb-20 poco:mb-10"
     >
       Clients are Loving Our App
     </h1>

@@ -4,3 +4,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(55, 20, 80);
+  border-radius: 5px;
+}
+scrollbar-color {
+  background-color: thin rgba(128, 128, 128, 0.39) rgb(55, 20, 80);
+}

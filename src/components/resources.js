@@ -62,7 +62,6 @@ export const resource = {
               "Продемонстрировать отображенный на экране телефона QR-код, для сканирования и оплаты.",
               "Готово! После сканирования, на экране отобразится уведомление об успешном платеже.",
             ],
-            warn: "Внимание! При оплате данным способом, пользователь получает кешбэк как от Dpay, так и от приложения SoliqUz без сканирования чека.",
           },
         },
         myInvoice: {
@@ -108,17 +107,17 @@ export const resource = {
       help: [
         {
           text: "Взаимодействие с оператором",
-          link: "./Files/Payment_with_client.pdf",
+          link: "Payment_with_client.pdf",
         },
-        { text: "Инфо о управлении рисками", link: ".pdf" },
-        { text: "Инфо о системе контроля", link: "./Files/system_control.pdf" },
-        { text: "Инфо-Безопасность", link: "./Files/info_security.pdf" },
+        { text: "Инфо о управлении рисками", link: "risks_control.pdf" },
+        { text: "Инфо о системе контроля", link: "system_control.pdf" },
+        { text: "Инфо-Безопасность", link: "info_security.pdf" },
         {
           text: "Политика конфиденциальности",
-          link: "./Files/Policy_privacy.pdf",
+          link: "Files/Policy_privacy.pdf",
         },
-        { text: "Преступная деятельность", link: "./Files/Jinoiy.pdf" },
-        { text: "Публичная оферта", link: "./Files/public_offer.pdf" },
+        { text: "Преступная деятельность", link: "Files/Jinoiy.pdf" },
+        { text: "Публичная оферта", link: "Files/public_offer.pdf" },
       ],
       about: [
         { text: "Что такое Dpay", link: "Services", hash: "#top" },
@@ -268,37 +267,53 @@ export const resource = {
     ],
     slides: [
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/01-app-showcase-screens.png",
+        thumb: require("../img/01.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 1.Advanced bydget managment",
       },
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/02-app-showcase-screens.png",
+        thumb: require("../img/02.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 2.Latest transaction history",
       },
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/03-app-showcase-screens.png",
+        thumb: require("../img/03.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 3.Transfers to people from your contact list",
       },
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/04-app-showcase-screens.png",
+        thumb: require("../img/04.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/05.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/06.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/07.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/08.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 4.Card-tocard transfers",
       },
     ],
     logos: [
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/01-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/02-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/03-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/04-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/05-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/06-brands.svg",
+      "https://api.logobank.uz/media/logos_png/Uzcard-01.png",
+      "https://uzoplata.com/wp-content/uploads/2020/10/humocard1.png",
+      "https://pr.uz/wp-content/uploads/2022/12/logo-paynet.png",
+      "https://api.logobank.uz/media/logos_png/OFB-01.png",
+      "https://api.logobank.uz/media/logos_png/ipoteka-01.png",
+      "https://api.logobank.uz/media/logos_png/XALQ_BANKI-01.png",
     ],
     howUse: [
       "Перевести деньги между картами UZCARD и HUMO",
@@ -466,7 +481,6 @@ export const resource = {
               "Skanerlash va to’lash uchun telefon ekranida paydo bo’lgan QR-kodni kassirga ko’rsating",
               "Tayyor! Skanerlash yakunlangandan so’ng, ekranda muvaffaqiyatli to’lov haqida xabar paydo bo’ladi",
             ],
-            warn: "Diqqat! Ushbu to’lov usulidan foydalanganda,  foydalanuvchi chekni skanerlamagan holda ham “Dpay”dan, ham “SoliqUz” ilovasidan cashback oladi",
           },
         },
         myInvoice: {
@@ -522,7 +536,7 @@ export const resource = {
         { text: "Info-Havsizlik", link: "./Files/info_security.pdf" },
         { text: "Maxfiylik siyosati", link: "./Files/policy_privacy.pdf" },
         { text: "Ommaviy oferta", link: "./Files/Ommaviy_oferta.pdf" },
-        { text: "jinoiy faoliyat", link: "./Files/Jinoiy.pdf" },
+        { text: "Jinoiy faoliyat", link: "./Files/Jinoiy.pdf" },
       ],
       about: [
         { text: "Dpay nima", link: "Services", hash: "#top" },
@@ -671,37 +685,53 @@ export const resource = {
     ],
     slides: [
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/01-app-showcase-screens.png",
+        thumb: require("../img/01.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 1.Advanced bydget managment",
       },
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/02-app-showcase-screens.png",
+        thumb: require("../img/02.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 2.Latest transaction history",
       },
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/03-app-showcase-screens.png",
+        thumb: require("../img/03.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 3.Transfers to people from your contact list",
       },
       {
-        thumb:
-          "https://dpay.uz/wp/wp-content/uploads/2022/02/04-app-showcase-screens.png",
+        thumb: require("../img/04.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/05.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/06.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/07.png"),
+        text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
+        title: "Step 4.Card-tocard transfers",
+      },
+      {
+        thumb: require("../img/08.png"),
         text: "A sed lorem felis, pulvinar pharetra. At tempus, vel sed faucibus amet sit elementum sed erat. Id nunc blandit pharetra facilisis.",
         title: "Step 4.Card-tocard transfers",
       },
     ],
     logos: [
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/01-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/02-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/03-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/04-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/05-brands.svg",
-      "https://dpay.uz/wp/wp-content/uploads/2022/02/06-brands.svg",
+      "https://api.logobank.uz/media/logos_png/Uzcard-01.png",
+      "https://uzoplata.com/wp-content/uploads/2020/10/humocard1.png",
+      "https://pr.uz/wp-content/uploads/2022/12/logo-paynet.png",
+      "https://api.logobank.uz/media/logos_png/OFB-01.png",
+      "https://api.logobank.uz/media/logos_png/ipoteka-01.png",
+      "https://api.logobank.uz/media/logos_png/XALQ_BANKI-01.png",
     ],
     howUse: [
       "UZCARD va HUMO kartalari o'rtasida pul o'tkazmalari",

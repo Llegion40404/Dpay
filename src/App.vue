@@ -243,7 +243,7 @@ const switchLang = (l) => {
           </ul>
 
           <div
-            class="h-auto py-2 w-10/12 absolute bottom-10 sm2:hidden overflow-hidden duration-500 flex flex-col"
+            class="h-auto py-2 w-10/12 absolute bottom-20 sm2:hidden overflow-hidden duration-500 flex flex-col"
           >
             <div class="flex justify-center pb-5 semimd:hidden">
               <span

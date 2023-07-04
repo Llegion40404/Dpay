@@ -107,17 +107,32 @@ export const resource = {
       help: [
         {
           text: "Взаимодействие с оператором",
-          link: "Payment_with_client.pdf",
+          link: "https://maipdf.com/est/d12026494684@pdf",
         },
-        { text: "Инфо о управлении рисками", link: "risks_control.pdf" },
-        { text: "Инфо о системе контроля", link: "system_control.pdf" },
-        { text: "Инфо-Безопасность", link: "info_security.pdf" },
+        {
+          text: "Инфо о управлении рисками",
+          link: "https://maipdf.com/est/d15592500549@pdf",
+        },
+        {
+          text: "Инфо о системе контроля",
+          link: "https://maipdf.com/est/d14400500800@pdf",
+        },
+        {
+          text: "Инфо-Безопасность",
+          link: "https://maipdf.com/est/d13546493189@pdf",
+        },
         {
           text: "Политика конфиденциальности",
-          link: "Files/Policy_privacy.pdf",
+          link: "https://maipdf.com/est/d14740500178@pdf",
         },
-        { text: "Преступная деятельность", link: "Files/Jinoiy.pdf" },
-        { text: "Публичная оферта", link: "Files/public_offer.pdf" },
+        {
+          text: "Преступная деятельность",
+          link: "https://maipdf.com/est/d11005493802@pdf",
+        },
+        {
+          text: "Публичная оферта",
+          link: "https://maipdf.com/est/d19015507152@pdf",
+        },
       ],
       about: [
         { text: "Что такое Dpay", link: "Services", hash: "#top" },
@@ -249,21 +264,11 @@ export const resource = {
         title: "Платежи",
         text: "В Dpay можно оплатить банковские кредиты, кредиты на бытовую технику, налоги и сборы, услуги бюджетных организаций, свет, газ, интернет и многое другое.",
       },
-      // {
-      //   thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/support.svg",
-      //   title: "",
-      //   text: "",
-      // },
       {
         thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/cashback.svg",
         title: "Оплата «на местах»",
         text: "Оплата «на местах» — это альтернативный способ оплаты товаров и услуг с помощью мобильного приложения Dpay для Android и iOS.",
       },
-      // {
-      //   thumb: "https://dpay.uz/wp/wp-content/uploads/2022/02/happy.svg",
-      //   title: "С помощью Dpay вы можете:",
-      //   text: "Перевести деньги между картами UZCARD и HUMO\n\n Оплатить штрафы ГУБДД Пополнение международных электронных кошельков Оплатить коммунальные услуги Узбекистана Оплатить локальную и зарубежную мобильную связь Оплатить мировые игровые сервисы Оплатить зарубежное и локальное онлайн телевидение Оплатить покупки в интернет-магазинах",
-      // },
     ],
     slides: [
       {
@@ -526,17 +531,32 @@ export const resource = {
       help: [
         {
           text: "Operator bilan suzbat qoidalari",
-          link: "./Files/Payment_with_client.pdf",
+          link: "https://maipdf.com/est/d12026494684@pdf",
         },
-        { text: "Tizim ma'lumotlari", link: "./Files/risks_control.pdf" },
+        {
+          text: "Tizim ma'lumotlari",
+          link: "https://maipdf.com/est/d15592500549@pdf",
+        },
         {
           text: "Boshqaruv tizimi ma'lumotlari",
-          link: "./Files/system_control.pdf",
+          link: "https://maipdf.com/est/d14400500800@pdf",
         },
-        { text: "Info-Havsizlik", link: "./Files/info_security.pdf" },
-        { text: "Maxfiylik siyosati", link: "./Files/policy_privacy.pdf" },
-        { text: "Ommaviy oferta", link: "./Files/Ommaviy_oferta.pdf" },
-        { text: "Jinoiy faoliyat", link: "./Files/Jinoiy.pdf" },
+        {
+          text: "Info-Havsizlik",
+          link: "https://maipdf.com/est/d13546493189@pdf",
+        },
+        {
+          text: "Maxfiylik siyosati",
+          link: "https://maipdf.com/est/d14740500178@pdf",
+        },
+        {
+          text: "Ommaviy oferta",
+          link: "https://maipdf.com/est/d15605506899@pdf",
+        },
+        {
+          text: "Jinoiy faoliyat",
+          link: "https://maipdf.com/est/d11005493802@pdf",
+        },
       ],
       about: [
         { text: "Dpay nima", link: "Services", hash: "#top" },

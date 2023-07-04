@@ -22,26 +22,29 @@ let carousel = ref(null);
         How Does It Work?
       </h1>
       <img
-        class="absolute md:h-[478px] md2:left-[310px] semibig:left-[460px] big2:left-[520px] big3:left-[540px] 1xl:left-[585px] 2xl:left-[620px] big:h-[598px] z-50 big:w-[320px] big:left-[490px] lg:w-[269px] xl:left-[415px] lg:left-[377px] md2:w-[240px] semimd:h-[528px] semimd:left-[348px] semimd:w-[265px] md:left-[281px] md:w-[218px] sm2:left-[205px] poco2:left-[125px] sm:left-[165px] poco:w-[308px] poco:top-[153px] poco:h-[568px] poco:left-[85.5px] phone2:w-[272px] phone2:left-[64px] phone2:h-[555px] phone:left-[51px] phone:top-[153px] phone:h-[441px] phone:w-[218px]"
+        class="absolute md:h-[500px] md2:left-[310px] semibig:left-[460px] big2:left-[505px] big3:left-[525px] 1xl:left-[565px] 2xl:left-[605px] big:h-[630px] z-50 big:left-[475px] big:w-[350px] big2:w-[350px] xl:left-[415px] lg:left-[377px] semimd:h-[548px] lg:w-80 semimd:left-[348px] md:left-[260px] md:w-4/12 sm2:left-[220px] poco2:left-[140px] sm:left-[175px] poco:w-[280px] poco:top-[140px] poco:h-[568px] poco:left-[100px] phone2:w-[272px] phone2:left-[64px] phone2:h-[555px] phone:left-[51px] phone:top-[142px] phone:h-[441px] phone:w-[218px]"
         width="326"
         src="../img/phone_frame.png"
         alt=""
       />
 
-      <div class="phone:w-11/12 mx-auto">
+      <div class="phone:w-11/12 md:w-full mx-auto">
         <Carousel
           transition="700"
           :items-to-show="2.7"
           :wrap-around="true"
           ref="carousel"
           v-model="currentSlide"
-          class="carousel phone:duration-300 md2:duration-700 md:w-11/12 md:mx-auto"
+          class="carousel phone:duration-300 md2:duration-700 w-full md:mx-auto"
           :breakpoints="{
             320: {
               itemsToShow: 1,
               transition: 500,
             },
             780: {
+              itemsToShow: 2,
+            },
+            1100: {
               itemsToShow: 3,
             },
           }"
@@ -54,20 +57,20 @@ let carousel = ref(null);
             <div
               :class="
                 currentSlide == idx
-                  ? 'carousel__item  flex flex-col'
-                  : 'carousel__item flex flex-col opacity-90'
+                  ? 'carousel__item  flex flex-col opacity-100 duration-500'
+                  : 'carousel__item flex flex-col opacity-30 duration-500'
               "
             >
               <img
                 width="300"
-                class="phone:w-9/12 mx-auto poco:w-[310px] big:h-[600px] big:min-w-[320px] poco:h-[570px] md:h-[480px] semimd:max-w-[270px] semimd:h-[530px]"
+                class="phone:w-8/12 rounded-3xl md2:min-w-[120%] mx-auto poco:w-full big:h-[600px] big:min-w-[320px] poco:h-[550px] md:h-[480px] md:min-w-[240px] semimd:h-[530px]"
                 :src="slide.thumb"
                 alt="image"
               />
               <div
                 :class="
                   currentSlide == idx
-                    ? 'absolute phone__text bottom-16 md:bottom-20 poco:bottom-24 phone:bottom-0 -left-1 flex flex-col items-center'
+                    ? 'absolute phone__text  md:bottom-20 poco:bottom-16 phone:bottom-1 phone2:bottom-10 -left-1 flex flex-col items-center'
                     : 'absolute opacity-0 w-full phone__text bottom-16 -left-1 flex flex-col items-center'
                 "
               >
@@ -77,7 +80,7 @@ let carousel = ref(null);
                   {{ slide.title }}
                 </h3>
                 <span
-                  class="font-semibold md:w-[250%] big:w-[150%] md2:w-[200%] text-lg phone:text-base opacity-60"
+                  class="font-semibold md:w-full big:w-[150%] text-lg phone:text-base opacity-60"
                 >
                   {{ slide.text }}
                 </span>

@@ -317,8 +317,7 @@ export const resource = {
       "https://uzoplata.com/wp-content/uploads/2020/10/humocard1.png",
       "https://pr.uz/wp-content/uploads/2022/12/logo-paynet.png",
       "https://api.logobank.uz/media/logos_png/OFB-01.png",
-      "https://api.logobank.uz/media/logos_png/ipoteka-01.png",
-      "https://api.logobank.uz/media/logos_png/XALQ_BANKI-01.png",
+      "https://api.logobank.uz/media/logos_png/%D0%A2%D1%80%D0%B0%D1%81%D1%82%D0%B1%D0%B0%D0%BD%D0%BA-01.png",
     ],
     howUse: [
       "Перевести деньги между картами UZCARD и HUMO",
@@ -750,8 +749,7 @@ export const resource = {
       "https://uzoplata.com/wp-content/uploads/2020/10/humocard1.png",
       "https://pr.uz/wp-content/uploads/2022/12/logo-paynet.png",
       "https://api.logobank.uz/media/logos_png/OFB-01.png",
-      "https://api.logobank.uz/media/logos_png/ipoteka-01.png",
-      "https://api.logobank.uz/media/logos_png/XALQ_BANKI-01.png",
+      "https://api.logobank.uz/media/logos_png/%D0%A2%D1%80%D0%B0%D1%81%D1%82%D0%B1%D0%B0%D0%BD%D0%BA-01.png",
     ],
     howUse: [
       "UZCARD va HUMO kartalari o'rtasida pul o'tkazmalari",

@@ -83,6 +83,11 @@ const switchLang = (l) => {
                 >
               </div>
             </div>
+            <a
+              class="px-4 py-2 bg-indigo-500 rounded-md ml-5"
+              href="https://my.dgb.uz"
+              >Log In</a
+            >
           </div>
           <div class="flex items-center">
             <span

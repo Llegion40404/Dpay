@@ -13,7 +13,7 @@ html.className = computed(() => (isLight.value ? "" : "dark"));
 const switchLight = () => {
   isLight.value = !isLight.value;
   let html = document.querySelector("html");
-  html.className = computed(() => (isLight.value ? "" : "dark"));
+  html.className = computed(() => (isLight.value ? "" : "dark")).value;
   computed(() =>
     isLight.value
       ? localStorage.removeItem("theme")

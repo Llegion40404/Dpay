@@ -1,5 +1,6 @@
 export const resource = {
   ru: {
+    headerTitle: "Все услуги в одном месте",
     additional: {
       title: "Что такое Dpay-кошелек",
       subtitle: "Используйте новые возможности",
@@ -423,6 +424,7 @@ export const resource = {
   //
   //
   uz: {
+    headerTitle: "Barcha xizmatlar bir joyda",
     additional: {
       title: "Dpay Hamyon nima?",
       subtitle:

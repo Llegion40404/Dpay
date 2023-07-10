@@ -17,7 +17,7 @@ const props = defineProps({
         class="semimd:flex xl:w-[750px] phone:pt-40 self-center md:pt-0 semimd:flex-col semimd:pb-16 md:w-9/12"
       >
         <p class="mb-7 dark:text-white text-[#604a8b] font-semibold text-2xl">
-          Manage All Your Money in One App
+          {{ data.headerTitle }}
         </p>
         <p class="tracking-tight text-[#212121] dark:text-white text-lg">
           {{ data.mainTitle }}
@@ -72,13 +72,13 @@ const props = defineProps({
         </p>
       </article>
       <div
-        class="h-full w-5/12 phone:w-full md:h-full phone:h-96 pt-16 sm:mt-12 sm:h-full md:mt-0"
+        class="h-full phone:w-full md:h-full phone:h-96 pt-16 sm:mt-12 sm:h-full md:mt-0"
       >
         <div
-          class="w-5/6 2xl:bg-[right_280px_top_300px] 2xl:bg-[length:570px_800px] xl:bg-[length:570px_750px] xl:bg-[right_240px_top_220px] semimd:bg-[right_210px_top_200px] semimd:bg-[length:500px_700px] md:bg-[right_150px_top_140px] md:bg-[length:430px_600px] h-full bg-no-repeat bg-cover bg-[url('https://dpay.uz/wp/wp-content/uploads/2022/02/hero-phone-1.png')] phone:w-full phone:bg-[right_120px_top_160px] phone:bg-[length:280px_500px] phone2:bg-[right_200px_top_150px] poco:bg-[right_150px_top_150px] poco:bg-[length:430px_600px] poco2:bg-[length:430px_670px] poco2:bg-[right_250px_top_200px] sm:bg-[right_300px_top_200px] sm:bg-[length:500px_700px] sm2:bg-[right_300px_top_150px] sm2:bg-[length:580px_900px]"
+          class="w-5/6 2xl:bg-[right_280px_top_300px] 2xl:bg-[length:570px_800px] xl:bg-[length:570px_750px] xl:bg-[right_240px_top_220px] semimd:bg-[right_210px_top_200px] semimd:bg-[length:500px_700px] md:bg-[right_150px_top_140px] md:bg-[length:430px_600px] h-full bg-no-repeat bg-cover bg-[url('./img/case_2.png')] phone:w-full phone:bg-[right_110px_top_160px] phone:bg-[length:200px_400px] phone2:bg-[right_200px_top_150px] poco:bg-[right_150px_top_150px] poco:bg-[length:430px_600px] poco2:bg-[length:430px_670px] poco2:bg-[right_250px_top_200px] sm:bg-[right_300px_top_200px] sm:bg-[length:500px_700px] sm2:bg-[right_300px_top_150px] sm2:bg-[length:580px_900px]"
         >
           <div
-            class="w-[600px] 2xl:bg-[right_0px_top_100px] xl:bg-[length:630px_950px] semimd:bg-[right_0px_top_60px] semimd:bg-[length:550px_800px] md:bg-[right_0px_top_30px] md:bg-[length:450px_650px] h-full bg-no-repeat phone:w-full phone:bg-[right_1px_top_80px] phone:bg-[length:300px_450px] phone2:bg-[length:360px_520px] poco:bg-[length:420px_700px] poco2:bg-[right_1px_top_80px] poco2:bg-[length:500px_700px] sm:bg-[right_10px_top_40px] sm:bg-[length:580px_800px] sm2:bg-[right_20px_top_0px] sm2:bg-[length:600px_900px] bg-cover bg-[url('https://dpay.uz/wp/wp-content/uploads/2022/02/hero-phone-1.png')]"
+            class="2xl:bg-[right_0px_top_100px] xl:bg-[length:630px_950px] semimd:bg-[right_0px_top_60px] semimd:bg-[length:550px_800px] md:bg-[right_0px_top_30px] md:bg-[length:450px_650px] h-full bg-no-repeat phone:bg-[left_90px_top_80px] phone:bg-[length:200px_400px] phone2:bg-[length:360px_520px] poco:bg-[length:420px_700px] poco2:bg-[right_1px_top_80px] poco2:bg-[length:500px_700px] sm:bg-[right_10px_top_40px] sm:bg-[length:580px_800px] sm2:bg-[right_20px_top_0px] sm2:bg-[length:600px_900px] bg-cover bg-[url('./img/case_1.png')]"
           ></div>
         </div>
       </div>

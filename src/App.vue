@@ -2,31 +2,36 @@
 import { ref } from "vue";
 import { RouterView, RouterLink } from "vue-router";
 import { resource } from "@/components/resources";
+import { computed } from "vue";
 
 let lang = ref(localStorage.getItem("lang") || "ru");
 let theme = localStorage.getItem("theme") || false;
 let isLight = theme ? ref(false) : ref(true);
 let isShown = ref(false);
 let html = document.querySelector("html");
-html.className = isLight.value ? "" : "dark";
+html.className = computed(() => (isLight.value ? "" : "dark"));
 const switchLight = () => {
   isLight.value = !isLight.value;
   let html = document.querySelector("html");
-  html.className = isLight.value ? "" : "dark";
-  isLight.value
-    ? localStorage.removeItem("theme")
-    : localStorage.setItem("theme", "dark");
+  html.className = computed(() => (isLight.value ? "" : "dark"));
+  computed(() =>
+    isLight.value
+      ? localStorage.removeItem("theme")
+      : localStorage.setItem("theme", "dark")
+  );
 };
 const hideMenu = () => {
   isShown.value = false;
 };
 const blockScroll = (bool) => {
-  bool
-    ? document.querySelector("body").classList.add("overflow-hidden")
-    : document.querySelector("body").classList.remove("overflow-hidden");
+  computed(() =>
+    bool
+      ? document.querySelector("body").classList.add("overflow-hidden")
+      : document.querySelector("body").classList.remove("overflow-hidden")
+  );
 };
 const switchLang = (l) => {
-  lang.value = l;
+  computed(() => (lang.value = l));
   localStorage.setItem("lang", l);
 };
 </script>
@@ -35,7 +40,7 @@ const switchLang = (l) => {
   <section class="wraper">
     <nav
       id="top"
-      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 shadow-md dark:shadow-none bg-white dark:bg-[rgb(13,11,22)] dark:text-white top-0 right-0 left-0"
+      class="absolute z-50 flex justify-between py-4 sm:px-3 phone:py-3 md:px-0 md2:py-5 !max-w-[100vw] shadow-md dark:shadow-none bg-white dark:bg-[rgb(13,11,22)] dark:text-white top-0 right-0 left-0"
     >
       <div
         class="container semimd:px-5 lg:px-3 flex justify-between px-5 poco:px-2 sm2:px-4 poco2:px-5 sm:px-0"
@@ -46,11 +51,6 @@ const switchLang = (l) => {
             to="/"
             >dpay</RouterLink
           >
-          <RouterLink
-            class="font-semibold opacity-90 text-base phone:hidden semimd:block"
-            to="/"
-            >Mobile App Showcase
-          </RouterLink>
         </div>
         <div class="flex items-center">
           <div class="mr-20 flex items-center">
@@ -83,11 +83,11 @@ const switchLang = (l) => {
                 >
               </div>
             </div>
-            <a
-              class="px-4 py-2 bg-indigo-500 rounded-md ml-5"
+            <!-- <a
+              class="px-4 py-2 text-white bg-indigo-500 rounded-md ml-5"
               href="https://my.dgb.uz"
               >Log In</a
-            >
+            > -->
           </div>
           <div class="flex items-center">
             <span
@@ -121,15 +121,15 @@ const switchLang = (l) => {
       <div
         :class="
           isShown
-            ? 'fixed semimd:hidden top-0 left-0 translate-x-0 z-30 h-screen w-screen bg-black bg-opacity-60'
-            : 'fixed top-0 left-0 bg-red-400 h-0 w-0 translate-x-[100vw]'
+            ? 'fixed semimd:hidden bg-black overflow-hidden top-0 translate-x-0 duration-500 bottom-0 left-0 right-0 z-30 w-screen bg-opacity-60'
+            : 'fixed top-0 left-0 right-0 bottom-0 overflow-hidden translate-x-[100vw] duration-500 h-screen w-screen'
         "
       >
         <div
           :class="
             isShown
-              ? 'bg-white dark:bg-[rgb(19,16,34)] h-screen absolute right-0 translate-x-0 duration-700 phone:px-5 p-16 w-[90vw] md:w-[70vw]'
-              : 'translate-x-[100vw] bg-white dark:bg-[rgb(19,16,34)] h-screen absolute w-[90vw] right-0 phone:px-5 p-20 duration-700'
+              ? 'absolute bg-white dark:bg-[rgb(19,16,34)] h-screen  right-0 translate-x-0 duration-700 phone:px-5 p-16 w-[90vw] md:w-[70vw]'
+              : 'absolute translate-x-[100vw] bg-white dark:bg-[rgb(19,16,34)] h-screen  w-[90vw] right-0 phone:px-5 p-20 duration-700'
           "
         >
           <i
@@ -248,7 +248,7 @@ const switchLang = (l) => {
           </ul>
 
           <div
-            class="h-auto py-2 w-10/12 absolute bottom-20 sm2:hidden overflow-hidden duration-500 flex flex-col"
+            class="h-auto py-2 w-10/12 absolute bottom-20 semimd:hidden overflow-hidden duration-500 flex flex-col"
           >
             <div class="flex justify-center pb-5 semimd:hidden">
               <span

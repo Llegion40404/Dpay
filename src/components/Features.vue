@@ -22,7 +22,7 @@ const props = defineProps({
         </div>
       </section>
     </div>
-    <article class="flex pt-20 justify-around">
+    <article class="flex pt-20 semimd:gap-10 semibig:gap-0 justify-between">
       <div class="w-7/12 phone:hidden semimd:block">
         <img src="../img/phone-features.png" alt="phone image" />
       </div>

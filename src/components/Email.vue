@@ -17,29 +17,17 @@ const showText = (idx) => {
 };
 </script>
 <template>
-  <section class="dark:text-white pt-12">
-    <div class="container flex flex-col md:px-3">
-      <section
-        class="flex phone:w-full justify-between phone:flex-col md:flex-row"
-      >
+  <section class="dark:text-white pt-12 pb-40">
+    <div class="container md:px-3">
+      <section class="flex phone:w-full items-center flex-col">
         <article
           class="font-bold px-3 pt-40 phone:pt-10 phone:text-center md:text-left md:pl-3 md:flex md:flex-col md:justify-center"
         >
           <h3
-            class="text-[#604a8b] dark:text-white phone:text-xl poco:text-2xl md:text-3xl md:pr-40"
+            class="text-[#604a8b] mb-10 text-center dark:text-white phone:text-xl poco:text-2xl md:text-3xl md:pr-40"
           >
             {{ data.popularQuests }}
           </h3>
-          <p
-            class="text-xl text-slate-500 dark:text-indigo-400 my-7 dark:opacity-60 poco2:px-4 poco2:text-center md:text-left md:px-0"
-          >
-            Still have unanswered questions and need to get in touch?
-          </p>
-          <button
-            class="px-5 py-3 bg-indigo-500 font-semibold text-white rounded-md md:mr-40"
-          >
-            Contact us now
-          </button>
         </article>
         <article class="my-10 phone:mx-2 md:w-11/12">
           <div
@@ -82,42 +70,11 @@ const showText = (idx) => {
             </div>
           </div>
         </article>
-      </section>
-
-      <section
-        class="mt-20 flex justify-center phone:mt-3 email bg-[rgb(243,246,255)] xl:px-20 xl:py-10 dark:bg-indigo-200 p-20 poco:pl-5 poco:pb-5 rounded-lg dark:bg-opacity-10 phone:p-0 phone:px-3 phone:mx-2"
-      >
-        <div class="flex phone:flex-col md:flex-row md:px-5 phone:pt-5">
-          <div class="flex phone:w-full md:w-1/2 phone:mb-5">
-            <i
-              class="fa-solid fa-bell fa-5x text-yellow-400 mr-10 phone:text-7xl phone:mr-4 phone:mt-4"
-            ></i>
-            <h4
-              class="font-bold text-indigo-500 dark:text-white mt-2 phone:text-base phone2:mt-8 sm:px-4 xl:pr-20"
-            >
-              Subscribe to our newsletter to stay informed about latest updates
-            </h4>
-          </div>
-          <form class="phone:pb-5 max-w-[100%] md:w-1/2">
-            <label for="email" class="relative">
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                class="rounded-lg text-lg border w-full phone:placeholder:text-base dark:border dark:border-gray-600 dark:bg-[rgb(42,40,56)] pl-12 py-3 phone:pl-9 phone:py-2 phone2:py-3 md:mt-8 poco2:pl-12 sm:mt-2 text-gray-700 dark:focus:bg-gray-200"
-              />
-              <i
-                class="fa-solid absolute top-[2px] text-gray-700 dark:text-white phone:left-3 phone:top-[3px] poco2:left-5 fa-envelope"
-              ></i>
-              <button
-                class="py-[13px] phone2:py-[15px] font-medium text-lg md2:px-7 phone:px-4 text-white bg-indigo-500 rounded-r-lg absolute right-[0px] phone:text-base sm:mt-2 md:mt-8 phone:py-[11px]"
-                type="submit"
-              >
-                Subscribe
-              </button>
-            </label>
-          </form>
-        </div>
+        <button
+          class="px-10 py-5 bg-indigo-500 font-semibold text-white text-xl rounded-md"
+        >
+          Свяжитесь с нами
+        </button>
       </section>
     </div>
   </section>

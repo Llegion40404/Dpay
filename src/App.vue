@@ -31,7 +31,7 @@ const blockScroll = (bool) => {
   );
 };
 const switchLang = (l) => {
-  computed(() => (lang.value = l));
+  lang.value = l;
   localStorage.setItem("lang", l);
 };
 </script>
@@ -150,30 +150,27 @@ const switchLang = (l) => {
               <div
                 class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0 w-full"
               >
-                <ul
+                <div
                   class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-5"
                 >
-                  <li
+                  <RouterLink
                     @click="hideMenu(), blockScroll(false)"
-                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
+                    class="dark:text-white block text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl py-1 px-3"
                     v-for="item in lang == 'ru'
                       ? resource.ru.documents.services
                       : resource.uz.documents.services"
+                    :to="
+                      item.link.includes('https')
+                        ? '/telegram'
+                        : {
+                            path: '/Services',
+                            hash: item.link,
+                          }
+                    "
                   >
-                    <RouterLink
-                      :to="
-                        item.link.includes('https')
-                          ? '/telegram'
-                          : {
-                              path: '/Services',
-                              hash: item.link,
-                            }
-                      "
-                    >
-                      {{ item?.text }}</RouterLink
-                    >
-                  </li>
-                </ul>
+                    {{ item?.text }}</RouterLink
+                  >
+                </div>
               </div>
             </li>
             <li class="group">
@@ -189,19 +186,20 @@ const switchLang = (l) => {
               <div
                 class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0 w-full"
               >
-                <ul
+                <div
                   class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-5"
                 >
-                  <li
+                  <a
                     @click="hideMenu(), blockScroll(false)"
-                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
+                    class="dark:text-white block text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
                     v-for="item in lang == 'ru'
                       ? resource.ru.documents.help
                       : resource.uz.documents.help"
+                    :href="item.link"
+                    download
+                    >{{ item?.text }}</a
                   >
-                    <a :href="item.link" download>{{ item?.text }}</a>
-                  </li>
-                </ul>
+                </div>
               </div>
             </li>
             <li class="group">
@@ -217,32 +215,29 @@ const switchLang = (l) => {
               <div
                 class="overflow-hidden group-hover:z-50 group-active:z-50 -z-50 absolute top-12 flex flex-col left-0 w-full"
               >
-                <ul
+                <div
                   class="w-full group-hover:translate-y-0 group-active:translate-y-0 translate-y-[1000px] duration-300 pt-5"
                 >
-                  <li
+                  <RouterLink
                     @click="hideMenu(), blockScroll(false)"
-                    class="dark:text-white text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
+                    class="dark:text-white block text-black phone:text-lg poco:text-xl poco2:text-2xl border-b border-sky-400 mb-3 dark:bg-slate-900 bg-gray-100 rounded-t-xl pt-1 px-3"
                     v-for="item in lang == 'ru'
                       ? resource.ru.documents.about
                       : resource.uz.documents.about"
+                    :to="
+                      item.link == 'Services'
+                        ? { path: 'Services', hash: item.hash }
+                        : {
+                            path:
+                              item.link == 'Services'
+                                ? 'Services#'
+                                : '/' + item.link,
+                            hash: item?.link,
+                          }
+                    "
+                    >{{ item?.text }}</RouterLink
                   >
-                    <RouterLink
-                      :to="
-                        item.link == 'Services'
-                          ? { path: 'Services', hash: item.hash }
-                          : {
-                              path:
-                                item.link == 'Services'
-                                  ? 'Services#'
-                                  : '/' + item.link,
-                              hash: item?.link,
-                            }
-                      "
-                      >{{ item?.text }}</RouterLink
-                    >
-                  </li>
-                </ul>
+                </div>
               </div>
             </li>
           </ul>

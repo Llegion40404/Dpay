@@ -22,9 +22,13 @@ const props = defineProps({
         </div>
       </section>
     </div>
-    <article class="flex pt-20 semimd:gap-10 semibig:gap-0 justify-between">
+    <article class="flex pt-20 semimd:gap-14 justify-between">
       <div class="w-7/12 phone:hidden semimd:block">
-        <img src="../img/phone-features.png" alt="phone image" />
+        <img
+          class="max-h-[900px] w-full"
+          src="../img/phone-features.png"
+          alt="phone image"
+        />
       </div>
       <article
         class="text-white w-3/5 semimd:text-left phone:text-center phone:w-full"
@@ -54,7 +58,7 @@ const props = defineProps({
                 {{ f.title }}
               </h2>
               <p
-                class="dark:text-indigo-300 semibig:leading-7 phone:leading-6 text-gray-700 dark:opacity-50 font-light text-lg"
+                class="dark:text-indigo-300 semibig:leading-7 phone:leading-6 text-gray-700 dark:opacity-50 text-lg"
               >
                 {{ f.text }}
               </p>
